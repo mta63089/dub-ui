@@ -1,0 +1,27 @@
+{
+  "name": "dub-ui",
+  "version": "0.0.1",
+  "author": "Michael T. Albert",
+  "private": true,
+  "description": "An Open-Source and Modern Typescript-React Component Library built on Radix-ui and Tailwindcss",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "component-library",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "components",
+    "open-source"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.3.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6"
+  }
+}
