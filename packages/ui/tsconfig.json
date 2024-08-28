@@ -1,0 +1,5 @@
+{
+  "extends": "@dub/config-ts/react-library.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}
