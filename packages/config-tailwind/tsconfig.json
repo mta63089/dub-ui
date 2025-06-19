@@ -1,5 +1,0 @@
-{
-  "extends": "@dub/config-ts/base.json",
-  "include": ["."],
-  "excluse": ["dist", "build", "node_modules"]
-}
