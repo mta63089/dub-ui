@@ -4,7 +4,7 @@ import path from "path";
 import { rimraf } from "rimraf";
 
 import { getAllBlocks } from "@/lib/blocks";
-import { registry } from "@/registry/index";
+import { registry } from "@/registry";
 
 async function buildRegistryIndex() {
   let index = `/* eslint-disable @typescript-eslint/ban-ts-comment */

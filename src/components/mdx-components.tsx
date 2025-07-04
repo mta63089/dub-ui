@@ -17,20 +17,16 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/registry/new-york-v4/ui/accordion";
-import {
-  Alert,
-  AlertDescription,
-  AlertTitle,
-} from "@/registry/new-york-v4/ui/alert";
-import { AspectRatio } from "@/registry/new-york-v4/ui/aspect-ratio";
-import { Button } from "@/registry/new-york-v4/ui/button";
+} from "@/registry/dubui/ui/accordion";
+import { Alert, AlertDescription, AlertTitle } from "@/registry/dubui/ui/alert";
+import { AspectRatio } from "@/registry/dubui/ui/aspect-ratio";
+import { Button } from "@/registry/dubui/ui/button";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/registry/new-york-v4/ui/tabs";
+} from "@/registry/dubui/ui/tabs";
 
 export const mdxComponents = {
   h1: ({ className, ...props }: React.ComponentProps<"h1">) => (
@@ -279,16 +275,26 @@ export const mdxComponents = {
     height,
     alt,
     ...props
-  }: React.ComponentProps<"img">) => (
-    <Image
-      className={cn("mt-6 rounded-md border", className)}
-      src={src || ""}
-      width={Number(width)}
-      height={Number(height)}
-      alt={alt || ""}
-      {...props}
-    />
-  ),
+  }: React.ComponentProps<"img">) => {
+    if (!src || typeof src !== "string") {
+      return null;
+    }
+
+    // If width and height are not provided, use default values.
+    const defaultWidth = 800;
+    const defaultHeight = 600;
+
+    return (
+      <Image
+        className={cn("mt-6 rounded-md border", className)}
+        src={src}
+        width={Number(width) || defaultWidth}
+        height={Number(height) || defaultHeight}
+        alt={alt || ""}
+        {...props}
+      />
+    );
+  },
   Tabs: ({ className, ...props }: React.ComponentProps<typeof Tabs>) => {
     return (
       <Tabs className={cn("relative mt-6 w-full", className)} {...props} />
