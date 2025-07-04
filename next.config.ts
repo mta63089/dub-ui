@@ -1,7 +1,28 @@
+import { createMDX } from "fumadocs-mdx/next";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  devIndicators: false,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  outputFileTracingIncludes: {
+    "/*": ["./registry/**/*"],
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
+  },
 };
 
-export default nextConfig;
+const withMDX = createMDX({});
+
+export default withMDX(nextConfig);
