@@ -1,11 +1,9 @@
-import React from "react"
-
 import {
   InputOTP,
   InputOTPGroup,
   InputOTPSeparator,
   InputOTPSlot,
-} from "@/registry/new-york-v4/ui/input-otp"
+} from "@/registry/dubui/ui/input-otp"
 
 export default function InputOTPWithSeparator() {
   return (

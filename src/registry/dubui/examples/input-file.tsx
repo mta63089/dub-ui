@@ -1,5 +1,5 @@
-import { Input } from "@/registry/new-york-v4/ui/input"
-import { Label } from "@/registry/new-york-v4/ui/label"
+import { Input } from "@/registry/dubui/ui/input"
+import { Label } from "@/registry/dubui/ui/label"
 
 export default function InputFile() {
   return (

@@ -1,16 +1,10 @@
-import { CalendarIcon } from "lucide-react"
-
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/registry/new-york-v4/ui/avatar"
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Avatar, AvatarFallback, AvatarImage } from "@/registry/dubui/ui/avatar"
+import { Button } from "@/registry/dubui/ui/button"
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "@/registry/new-york-v4/ui/hover-card"
+} from "@/registry/dubui/ui/hover-card"
 
 export default function HoverCardDemo() {
   return (

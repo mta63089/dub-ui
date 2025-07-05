@@ -16,8 +16,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york-v4/ui/card"
-import { ChartConfig, ChartContainer } from "@/registry/new-york-v4/ui/chart"
+} from "@/registry/dubui/ui/card"
+import { ChartConfig, ChartContainer } from "@/registry/dubui/ui/chart"
 
 export const description = "A radial chart with text"
 

@@ -1,5 +1,3 @@
-import * as React from "react"
-
 import {
   Select,
   SelectContent,
@@ -8,7 +6,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/registry/new-york-v4/ui/select"
+} from "@/registry/dubui/ui/select"
 
 export default function SelectScrollable() {
   return (

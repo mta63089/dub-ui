@@ -8,8 +8,8 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/registry/new-york-v4/ui/alert-dialog"
-import { Button } from "@/registry/new-york-v4/ui/button"
+} from "@/registry/dubui/ui/alert-dialog"
+import { Button } from "@/registry/dubui/ui/button"
 
 export default function AlertDialogDemo() {
   return (

@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/dubui/ui/button"
 
 export default function ButtonAsChild() {
   return (

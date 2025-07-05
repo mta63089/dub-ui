@@ -1,75 +1,75 @@
 import * as React from "react"
 
-import { ChartAreaAxes } from "@/registry/new-york-v4/charts/chart-area-axes"
-import { ChartAreaDefault } from "@/registry/new-york-v4/charts/chart-area-default"
-import { ChartAreaGradient } from "@/registry/new-york-v4/charts/chart-area-gradient"
-import { ChartAreaIcons } from "@/registry/new-york-v4/charts/chart-area-icons"
-import { ChartAreaInteractive } from "@/registry/new-york-v4/charts/chart-area-interactive"
-import { ChartAreaLegend } from "@/registry/new-york-v4/charts/chart-area-legend"
-import { ChartAreaLinear } from "@/registry/new-york-v4/charts/chart-area-linear"
-import { ChartAreaStacked } from "@/registry/new-york-v4/charts/chart-area-stacked"
-import { ChartAreaStackedExpand } from "@/registry/new-york-v4/charts/chart-area-stacked-expand"
-import { ChartAreaStep } from "@/registry/new-york-v4/charts/chart-area-step"
-import { ChartBarActive } from "@/registry/new-york-v4/charts/chart-bar-active"
-import { ChartBarDefault } from "@/registry/new-york-v4/charts/chart-bar-default"
-import { ChartBarHorizontal } from "@/registry/new-york-v4/charts/chart-bar-horizontal"
-import { ChartBarInteractive } from "@/registry/new-york-v4/charts/chart-bar-interactive"
-import { ChartBarLabel } from "@/registry/new-york-v4/charts/chart-bar-label"
-import { ChartBarLabelCustom } from "@/registry/new-york-v4/charts/chart-bar-label-custom"
-import { ChartBarMixed } from "@/registry/new-york-v4/charts/chart-bar-mixed"
-import { ChartBarMultiple } from "@/registry/new-york-v4/charts/chart-bar-multiple"
-import { ChartBarNegative } from "@/registry/new-york-v4/charts/chart-bar-negative"
-import { ChartBarStacked } from "@/registry/new-york-v4/charts/chart-bar-stacked"
-import { ChartLineDefault } from "@/registry/new-york-v4/charts/chart-line-default"
-import { ChartLineDots } from "@/registry/new-york-v4/charts/chart-line-dots"
-import { ChartLineDotsColors } from "@/registry/new-york-v4/charts/chart-line-dots-colors"
-import { ChartLineDotsCustom } from "@/registry/new-york-v4/charts/chart-line-dots-custom"
-import { ChartLineInteractive } from "@/registry/new-york-v4/charts/chart-line-interactive"
-import { ChartLineLabel } from "@/registry/new-york-v4/charts/chart-line-label"
-import { ChartLineLabelCustom } from "@/registry/new-york-v4/charts/chart-line-label-custom"
-import { ChartLineLinear } from "@/registry/new-york-v4/charts/chart-line-linear"
-import { ChartLineMultiple } from "@/registry/new-york-v4/charts/chart-line-multiple"
-import { ChartLineStep } from "@/registry/new-york-v4/charts/chart-line-step"
-import { ChartPieDonut } from "@/registry/new-york-v4/charts/chart-pie-donut"
-import { ChartPieDonutActive } from "@/registry/new-york-v4/charts/chart-pie-donut-active"
-import { ChartPieDonutText } from "@/registry/new-york-v4/charts/chart-pie-donut-text"
-import { ChartPieInteractive } from "@/registry/new-york-v4/charts/chart-pie-interactive"
-import { ChartPieLabel } from "@/registry/new-york-v4/charts/chart-pie-label"
-import { ChartPieLabelCustom } from "@/registry/new-york-v4/charts/chart-pie-label-custom"
-import { ChartPieLabelList } from "@/registry/new-york-v4/charts/chart-pie-label-list"
-import { ChartPieLegend } from "@/registry/new-york-v4/charts/chart-pie-legend"
-import { ChartPieSeparatorNone } from "@/registry/new-york-v4/charts/chart-pie-separator-none"
-import { ChartPieSimple } from "@/registry/new-york-v4/charts/chart-pie-simple"
-import { ChartPieStacked } from "@/registry/new-york-v4/charts/chart-pie-stacked"
-import { ChartRadarDefault } from "@/registry/new-york-v4/charts/chart-radar-default"
-import { ChartRadarDots } from "@/registry/new-york-v4/charts/chart-radar-dots"
-import { ChartRadarGridCircle } from "@/registry/new-york-v4/charts/chart-radar-grid-circle"
-import { ChartRadarGridCircleFill } from "@/registry/new-york-v4/charts/chart-radar-grid-circle-fill"
-import { ChartRadarGridCircleNoLines } from "@/registry/new-york-v4/charts/chart-radar-grid-circle-no-lines"
-import { ChartRadarGridCustom } from "@/registry/new-york-v4/charts/chart-radar-grid-custom"
-import { ChartRadarGridFill } from "@/registry/new-york-v4/charts/chart-radar-grid-fill"
-import { ChartRadarGridNone } from "@/registry/new-york-v4/charts/chart-radar-grid-none"
-import { ChartRadarIcons } from "@/registry/new-york-v4/charts/chart-radar-icons"
-import { ChartRadarLabelCustom } from "@/registry/new-york-v4/charts/chart-radar-label-custom"
-import { ChartRadarLegend } from "@/registry/new-york-v4/charts/chart-radar-legend"
-import { ChartRadarLinesOnly } from "@/registry/new-york-v4/charts/chart-radar-lines-only"
-import { ChartRadarMultiple } from "@/registry/new-york-v4/charts/chart-radar-multiple"
-import { ChartRadarRadius } from "@/registry/new-york-v4/charts/chart-radar-radius"
-import { ChartRadialGrid } from "@/registry/new-york-v4/charts/chart-radial-grid"
-import { ChartRadialLabel } from "@/registry/new-york-v4/charts/chart-radial-label"
-import { ChartRadialShape } from "@/registry/new-york-v4/charts/chart-radial-shape"
-import { ChartRadialSimple } from "@/registry/new-york-v4/charts/chart-radial-simple"
-import { ChartRadialStacked } from "@/registry/new-york-v4/charts/chart-radial-stacked"
-import { ChartRadialText } from "@/registry/new-york-v4/charts/chart-radial-text"
-import { ChartTooltipAdvanced } from "@/registry/new-york-v4/charts/chart-tooltip-advanced"
-import { ChartTooltipDefault } from "@/registry/new-york-v4/charts/chart-tooltip-default"
-import { ChartTooltipFormatter } from "@/registry/new-york-v4/charts/chart-tooltip-formatter"
-import { ChartTooltipIcons } from "@/registry/new-york-v4/charts/chart-tooltip-icons"
-import { ChartTooltipIndicatorLine } from "@/registry/new-york-v4/charts/chart-tooltip-indicator-line"
-import { ChartTooltipIndicatorNone } from "@/registry/new-york-v4/charts/chart-tooltip-indicator-none"
-import { ChartTooltipLabelCustom } from "@/registry/new-york-v4/charts/chart-tooltip-label-custom"
-import { ChartTooltipLabelFormatter } from "@/registry/new-york-v4/charts/chart-tooltip-label-formatter"
-import { ChartTooltipLabelNone } from "@/registry/new-york-v4/charts/chart-tooltip-label-none"
+import { ChartAreaAxes } from "@/registry/dubui/charts/chart-area-axes"
+import { ChartAreaDefault } from "@/registry/dubui/charts/chart-area-default"
+import { ChartAreaGradient } from "@/registry/dubui/charts/chart-area-gradient"
+import { ChartAreaIcons } from "@/registry/dubui/charts/chart-area-icons"
+import { ChartAreaInteractive } from "@/registry/dubui/charts/chart-area-interactive"
+import { ChartAreaLegend } from "@/registry/dubui/charts/chart-area-legend"
+import { ChartAreaLinear } from "@/registry/dubui/charts/chart-area-linear"
+import { ChartAreaStacked } from "@/registry/dubui/charts/chart-area-stacked"
+import { ChartAreaStackedExpand } from "@/registry/dubui/charts/chart-area-stacked-expand"
+import { ChartAreaStep } from "@/registry/dubui/charts/chart-area-step"
+import { ChartBarActive } from "@/registry/dubui/charts/chart-bar-active"
+import { ChartBarDefault } from "@/registry/dubui/charts/chart-bar-default"
+import { ChartBarHorizontal } from "@/registry/dubui/charts/chart-bar-horizontal"
+import { ChartBarInteractive } from "@/registry/dubui/charts/chart-bar-interactive"
+import { ChartBarLabel } from "@/registry/dubui/charts/chart-bar-label"
+import { ChartBarLabelCustom } from "@/registry/dubui/charts/chart-bar-label-custom"
+import { ChartBarMixed } from "@/registry/dubui/charts/chart-bar-mixed"
+import { ChartBarMultiple } from "@/registry/dubui/charts/chart-bar-multiple"
+import { ChartBarNegative } from "@/registry/dubui/charts/chart-bar-negative"
+import { ChartBarStacked } from "@/registry/dubui/charts/chart-bar-stacked"
+import { ChartLineDefault } from "@/registry/dubui/charts/chart-line-default"
+import { ChartLineDots } from "@/registry/dubui/charts/chart-line-dots"
+import { ChartLineDotsColors } from "@/registry/dubui/charts/chart-line-dots-colors"
+import { ChartLineDotsCustom } from "@/registry/dubui/charts/chart-line-dots-custom"
+import { ChartLineInteractive } from "@/registry/dubui/charts/chart-line-interactive"
+import { ChartLineLabel } from "@/registry/dubui/charts/chart-line-label"
+import { ChartLineLabelCustom } from "@/registry/dubui/charts/chart-line-label-custom"
+import { ChartLineLinear } from "@/registry/dubui/charts/chart-line-linear"
+import { ChartLineMultiple } from "@/registry/dubui/charts/chart-line-multiple"
+import { ChartLineStep } from "@/registry/dubui/charts/chart-line-step"
+import { ChartPieDonut } from "@/registry/dubui/charts/chart-pie-donut"
+import { ChartPieDonutActive } from "@/registry/dubui/charts/chart-pie-donut-active"
+import { ChartPieDonutText } from "@/registry/dubui/charts/chart-pie-donut-text"
+import { ChartPieInteractive } from "@/registry/dubui/charts/chart-pie-interactive"
+import { ChartPieLabel } from "@/registry/dubui/charts/chart-pie-label"
+import { ChartPieLabelCustom } from "@/registry/dubui/charts/chart-pie-label-custom"
+import { ChartPieLabelList } from "@/registry/dubui/charts/chart-pie-label-list"
+import { ChartPieLegend } from "@/registry/dubui/charts/chart-pie-legend"
+import { ChartPieSeparatorNone } from "@/registry/dubui/charts/chart-pie-separator-none"
+import { ChartPieSimple } from "@/registry/dubui/charts/chart-pie-simple"
+import { ChartPieStacked } from "@/registry/dubui/charts/chart-pie-stacked"
+import { ChartRadarDefault } from "@/registry/dubui/charts/chart-radar-default"
+import { ChartRadarDots } from "@/registry/dubui/charts/chart-radar-dots"
+import { ChartRadarGridCircle } from "@/registry/dubui/charts/chart-radar-grid-circle"
+import { ChartRadarGridCircleFill } from "@/registry/dubui/charts/chart-radar-grid-circle-fill"
+import { ChartRadarGridCircleNoLines } from "@/registry/dubui/charts/chart-radar-grid-circle-no-lines"
+import { ChartRadarGridCustom } from "@/registry/dubui/charts/chart-radar-grid-custom"
+import { ChartRadarGridFill } from "@/registry/dubui/charts/chart-radar-grid-fill"
+import { ChartRadarGridNone } from "@/registry/dubui/charts/chart-radar-grid-none"
+import { ChartRadarIcons } from "@/registry/dubui/charts/chart-radar-icons"
+import { ChartRadarLabelCustom } from "@/registry/dubui/charts/chart-radar-label-custom"
+import { ChartRadarLegend } from "@/registry/dubui/charts/chart-radar-legend"
+import { ChartRadarLinesOnly } from "@/registry/dubui/charts/chart-radar-lines-only"
+import { ChartRadarMultiple } from "@/registry/dubui/charts/chart-radar-multiple"
+import { ChartRadarRadius } from "@/registry/dubui/charts/chart-radar-radius"
+import { ChartRadialGrid } from "@/registry/dubui/charts/chart-radial-grid"
+import { ChartRadialLabel } from "@/registry/dubui/charts/chart-radial-label"
+import { ChartRadialShape } from "@/registry/dubui/charts/chart-radial-shape"
+import { ChartRadialSimple } from "@/registry/dubui/charts/chart-radial-simple"
+import { ChartRadialStacked } from "@/registry/dubui/charts/chart-radial-stacked"
+import { ChartRadialText } from "@/registry/dubui/charts/chart-radial-text"
+import { ChartTooltipAdvanced } from "@/registry/dubui/charts/chart-tooltip-advanced"
+import { ChartTooltipDefault } from "@/registry/dubui/charts/chart-tooltip-default"
+import { ChartTooltipFormatter } from "@/registry/dubui/charts/chart-tooltip-formatter"
+import { ChartTooltipIcons } from "@/registry/dubui/charts/chart-tooltip-icons"
+import { ChartTooltipIndicatorLine } from "@/registry/dubui/charts/chart-tooltip-indicator-line"
+import { ChartTooltipIndicatorNone } from "@/registry/dubui/charts/chart-tooltip-indicator-none"
+import { ChartTooltipLabelCustom } from "@/registry/dubui/charts/chart-tooltip-label-custom"
+import { ChartTooltipLabelFormatter } from "@/registry/dubui/charts/chart-tooltip-label-formatter"
+import { ChartTooltipLabelNone } from "@/registry/dubui/charts/chart-tooltip-label-none"
 
 type ChartComponent = React.ComponentType
 
@@ -202,74 +202,74 @@ export const charts: ChartGroups = {
 
 // Export individual components for backward compatibility
 export {
+  ChartAreaAxes,
   ChartAreaDefault,
-  ChartAreaLinear,
-  ChartAreaStep,
+  ChartAreaGradient,
+  ChartAreaIcons,
+  ChartAreaInteractive,
   ChartAreaLegend,
+  ChartAreaLinear,
   ChartAreaStacked,
   ChartAreaStackedExpand,
-  ChartAreaIcons,
-  ChartAreaGradient,
-  ChartAreaAxes,
-  ChartAreaInteractive,
+  ChartAreaStep,
+  ChartBarActive,
   ChartBarDefault,
   ChartBarHorizontal,
-  ChartBarMultiple,
-  ChartBarStacked,
+  ChartBarInteractive,
   ChartBarLabel,
   ChartBarLabelCustom,
   ChartBarMixed,
-  ChartBarActive,
+  ChartBarMultiple,
   ChartBarNegative,
-  ChartBarInteractive,
+  ChartBarStacked,
   ChartLineDefault,
-  ChartLineLinear,
-  ChartLineStep,
-  ChartLineMultiple,
   ChartLineDots,
-  ChartLineDotsCustom,
   ChartLineDotsColors,
+  ChartLineDotsCustom,
+  ChartLineInteractive,
   ChartLineLabel,
   ChartLineLabelCustom,
-  ChartLineInteractive,
-  ChartPieSimple,
-  ChartPieSeparatorNone,
+  ChartLineLinear,
+  ChartLineMultiple,
+  ChartLineStep,
+  ChartPieDonut,
+  ChartPieDonutActive,
+  ChartPieDonutText,
+  ChartPieInteractive,
   ChartPieLabel,
   ChartPieLabelCustom,
   ChartPieLabelList,
   ChartPieLegend,
-  ChartPieDonut,
-  ChartPieDonutActive,
-  ChartPieDonutText,
+  ChartPieSeparatorNone,
+  ChartPieSimple,
   ChartPieStacked,
-  ChartPieInteractive,
   ChartRadarDefault,
   ChartRadarDots,
-  ChartRadarLinesOnly,
-  ChartRadarLabelCustom,
-  ChartRadarGridCustom,
-  ChartRadarGridNone,
   ChartRadarGridCircle,
-  ChartRadarGridCircleNoLines,
   ChartRadarGridCircleFill,
+  ChartRadarGridCircleNoLines,
+  ChartRadarGridCustom,
   ChartRadarGridFill,
-  ChartRadarMultiple,
-  ChartRadarLegend,
+  ChartRadarGridNone,
   ChartRadarIcons,
+  ChartRadarLabelCustom,
+  ChartRadarLegend,
+  ChartRadarLinesOnly,
+  ChartRadarMultiple,
   ChartRadarRadius,
-  ChartRadialSimple,
-  ChartRadialLabel,
   ChartRadialGrid,
-  ChartRadialText,
+  ChartRadialLabel,
   ChartRadialShape,
+  ChartRadialSimple,
   ChartRadialStacked,
+  ChartRadialText,
+  ChartTooltipAdvanced,
   ChartTooltipDefault,
+  ChartTooltipFormatter,
+  ChartTooltipIcons,
   ChartTooltipIndicatorLine,
   ChartTooltipIndicatorNone,
   ChartTooltipLabelCustom,
   ChartTooltipLabelFormatter,
   ChartTooltipLabelNone,
-  ChartTooltipFormatter,
-  ChartTooltipIcons,
-  ChartTooltipAdvanced,
 }

@@ -1,6 +1,4 @@
-import { AppWindowIcon, CodeIcon } from "lucide-react"
-
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/dubui/ui/button"
 import {
   Card,
   CardContent,
@@ -8,15 +6,15 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york-v4/ui/card"
-import { Input } from "@/registry/new-york-v4/ui/input"
-import { Label } from "@/registry/new-york-v4/ui/label"
+} from "@/registry/dubui/ui/card"
+import { Input } from "@/registry/dubui/ui/input"
+import { Label } from "@/registry/dubui/ui/label"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/registry/new-york-v4/ui/tabs"
+} from "@/registry/dubui/ui/tabs"
 
 export default function TabsDemo() {
   return (
@@ -38,11 +36,11 @@ export default function TabsDemo() {
             <CardContent className="grid gap-6">
               <div className="grid gap-3">
                 <Label htmlFor="tabs-demo-name">Name</Label>
-                <Input id="tabs-demo-name" defaultValue="Pedro Duarte" />
+                <Input id="tabs-demo-name" defaultValue="A Guy" />
               </div>
               <div className="grid gap-3">
                 <Label htmlFor="tabs-demo-username">Username</Label>
-                <Input id="tabs-demo-username" defaultValue="@peduarte" />
+                <Input id="tabs-demo-username" defaultValue="@username" />
               </div>
             </CardContent>
             <CardFooter>

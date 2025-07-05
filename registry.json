@@ -1,78 +1,4632 @@
 {
-  "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "acme",
-  "homepage": "https://acme.com",
+  "name": "dubui",
+  "homepage": "https://ui.ddubb.net",
   "items": [
     {
-      "name": "hello-world",
-      "type": "registry:component",
-      "title": "Hello World",
-      "description": "A simple hello world component",
+      "name": "index",
+      "type": "registry:style",
+      "files": [],
+      "cssVars": {},
+      "registryDependencies": ["utils"],
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "devDependencies": ["tw-animate-css"]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/accordion.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-accordion"]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/alert.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/alert-dialog.tsx"
+        }
+      ],
       "registryDependencies": ["button"],
+      "dependencies": ["@radix-ui/react-alert-dialog"]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
       "files": [
         {
-          "path": "registry/new-york/blocks/hello-world/hello-world.tsx",
-          "type": "registry:component"
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/aspect-ratio.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-aspect-ratio"]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/avatar.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-avatar"]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/badge.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slot"]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/breadcrumb.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slot"]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/button.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slot"]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/calendar.tsx"
+        }
+      ],
+      "registryDependencies": ["button"],
+      "dependencies": ["react-day-picker@latest", "date-fns"]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/card.tsx"
         }
       ]
     },
     {
-      "name": "example-form",
-      "type": "registry:component",
-      "title": "Example Form",
-      "description": "A contact form with Zod validation.",
-      "dependencies": ["zod"],
-      "registryDependencies": ["button", "input", "label", "textarea", "card"],
+      "name": "carousel",
+      "type": "registry:ui",
       "files": [
         {
-          "path": "registry/new-york/blocks/example-form/example-form.tsx",
-          "type": "registry:component"
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/carousel.tsx"
         }
-      ]
+      ],
+      "registryDependencies": ["button"],
+      "dependencies": ["embla-carousel-react"]
     },
     {
-      "name": "complex-component",
-      "type": "registry:component",
-      "title": "Complex Component",
-      "description": "A complex component showing hooks, libs and components.",
+      "name": "chart",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/chart.tsx"
+        }
+      ],
       "registryDependencies": ["card"],
+      "dependencies": ["recharts", "lucide-react"]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
       "files": [
         {
-          "path": "registry/new-york/blocks/complex-component/page.tsx",
-          "type": "registry:page",
-          "target": "app/pokemon/page.tsx"
-        },
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/checkbox.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-checkbox"]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "files": [
         {
-          "path": "registry/new-york/blocks/complex-component/components/pokemon-card.tsx",
-          "type": "registry:component"
-        },
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/collapsible.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-collapsible"]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "files": [
         {
-          "path": "registry/new-york/blocks/complex-component/components/pokemon-image.tsx",
-          "type": "registry:component"
-        },
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/command.tsx"
+        }
+      ],
+      "registryDependencies": ["dialog"],
+      "dependencies": ["cmdk"]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "files": [
         {
-          "path": "registry/new-york/blocks/complex-component/lib/pokemon.ts",
-          "type": "registry:lib"
-        },
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/context-menu.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-context-menu"]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "files": [
         {
-          "path": "registry/new-york/blocks/complex-component/hooks/use-pokemon.ts",
-          "type": "registry:hook"
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/dialog.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-dialog"]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/drawer.tsx"
+        }
+      ],
+      "dependencies": ["vaul", "@radix-ui/react-dialog"]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/dropdown-menu.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-dropdown-menu"]
+    },
+    {
+      "name": "form",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/form.tsx"
+        }
+      ],
+      "registryDependencies": ["button", "label"],
+      "dependencies": [
+        "@radix-ui/react-label",
+        "@radix-ui/react-slot",
+        "@hookform/resolvers",
+        "zod",
+        "react-hook-form"
+      ]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/hover-card.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-hover-card"]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/input.tsx"
         }
       ]
     },
     {
-      "name": "example-with-css",
-      "type": "registry:component",
-      "title": "Example with CSS",
-      "description": "A login form with a CSS file.",
+      "name": "input-otp",
+      "type": "registry:ui",
       "files": [
         {
-          "path": "registry/new-york/blocks/example-with-css/example-card.tsx",
-          "type": "registry:component"
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/input-otp.tsx"
+        }
+      ],
+      "dependencies": ["input-otp"]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/label.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-label"]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/menubar.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-menubar"]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/navigation-menu.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-navigation-menu"]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/pagination.tsx"
+        }
+      ],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/popover.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-popover"]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/progress.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-progress"]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/radio-group.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-radio-group"]
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/resizable.tsx"
+        }
+      ],
+      "dependencies": ["react-resizable-panels"]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/scroll-area.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-scroll-area"]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/select.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-select"]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/separator.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-separator"]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/sheet.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-dialog"]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/sidebar.tsx"
+        }
+      ],
+      "cssVars": {
+        "dark": {
+          "sidebar-accent": "240 3.7% 15.9%",
+          "sidebar-accent-foreground": "240 4.8% 95.9%",
+          "sidebar-background": "240 5.9% 10%",
+          "sidebar-border": "240 3.7% 15.9%",
+          "sidebar-foreground": "240 4.8% 95.9%",
+          "sidebar-primary": "224.3 76.3% 48%",
+          "sidebar-primary-foreground": "0 0% 100%",
+          "sidebar-ring": "217.2 91.2% 59.8%"
+        },
+        "light": {
+          "sidebar-accent": "240 4.8% 95.9%",
+          "sidebar-accent-foreground": "240 5.9% 10%",
+          "sidebar-background": "0 0% 98%",
+          "sidebar-border": "220 13% 91%",
+          "sidebar-foreground": "240 5.3% 26.1%",
+          "sidebar-primary": "240 5.9% 10%",
+          "sidebar-primary-foreground": "0 0% 98%",
+          "sidebar-ring": "217.2 91.2% 59.8%"
+        }
+      },
+      "registryDependencies": [
+        "button",
+        "separator",
+        "sheet",
+        "tooltip",
+        "input",
+        "use-mobile",
+        "skeleton"
+      ],
+      "tailwind": {
+        "config": {
+          "theme": {
+            "extend": {
+              "colors": {
+                "sidebar": {
+                  "DEFAULT": "hsl(var(--sidebar-background))",
+                  "accent": "hsl(var(--sidebar-accent))",
+                  "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+                  "border": "hsl(var(--sidebar-border))",
+                  "foreground": "hsl(var(--sidebar-foreground))",
+                  "primary": "hsl(var(--sidebar-primary))",
+                  "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+                  "ring": "hsl(var(--sidebar-ring))"
+                }
+              }
+            }
+          }
+        }
+      },
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "class-variance-authority",
+        "lucide-react"
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/skeleton.tsx"
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/slider.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-slider"]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/sonner.tsx"
+        }
+      ],
+      "dependencies": ["sonner", "next-themes"]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/switch.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-switch"]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/table.tsx"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/tabs.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-tabs"]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/textarea.tsx"
+        }
+      ]
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/toggle.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-toggle"]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/toggle-group.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle"],
+      "dependencies": ["@radix-ui/react-toggle-group"]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "files": [
+        {
+          "type": "registry:ui",
+          "path": "src/registry/dubui/ui/tooltip.tsx"
+        }
+      ],
+      "dependencies": ["@radix-ui/react-tooltip"]
+    },
+    {
+      "name": "dashboard-01",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/dashboard-01/page.tsx",
+          "target": "app/dashboard/page.tsx"
         },
         {
-          "path": "registry/new-york/blocks/example-with-css/example-card.css",
-          "type": "registry:component"
+          "type": "registry:file",
+          "path": "src/registry/dubui/blocks/dashboard-01/data.json",
+          "target": "app/dashboard/data.json"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/dashboard-01/components/app-sidebar.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/dashboard-01/components/chart-area-interactive.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/dashboard-01/components/data-table.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/dashboard-01/components/nav-documents.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/dashboard-01/components/nav-main.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/dashboard-01/components/nav-secondary.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/dashboard-01/components/nav-user.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/dashboard-01/components/section-cards.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/dashboard-01/components/site-header.tsx"
+        }
+      ],
+      "description": "A dashboard with sidebar, charts and data table.",
+      "categories": ["dashboard"],
+      "meta": {
+        "iframeHeight": "1000px"
+      },
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "label",
+        "chart",
+        "card",
+        "select",
+        "tabs",
+        "table",
+        "toggle-group",
+        "badge",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "drawer",
+        "input",
+        "avatar",
+        "sheet",
+        "sonner"
+      ],
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "zod",
+        "@tabler/icons-react"
+      ]
+    },
+    {
+      "name": "sidebar-01",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-01/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-01/components/app-sidebar.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-01/components/search-form.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-01/components/version-switcher.tsx"
+        }
+      ],
+      "description": "A simple sidebar with navigation grouped by section.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "label",
+        "dropdown-menu"
+      ]
+    },
+    {
+      "name": "sidebar-02",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-02/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-02/components/app-sidebar.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-02/components/search-form.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-02/components/version-switcher.tsx"
+        }
+      ],
+      "description": "A sidebar with collapsible sections.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "label",
+        "dropdown-menu"
+      ]
+    },
+    {
+      "name": "sidebar-03",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-03/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-03/components/app-sidebar.tsx"
+        }
+      ],
+      "description": "A sidebar with submenus.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": ["sidebar", "breadcrumb"]
+    },
+    {
+      "name": "sidebar-04",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-04/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-04/components/app-sidebar.tsx"
+        }
+      ],
+      "description": "A floating sidebar with submenus.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": ["sidebar", "breadcrumb", "separator"]
+    },
+    {
+      "name": "sidebar-05",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-05/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-05/components/app-sidebar.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-05/components/search-form.tsx"
+        }
+      ],
+      "description": "A sidebar with collapsible submenus.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "label",
+        "collapsible"
+      ]
+    },
+    {
+      "name": "sidebar-06",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-06/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-06/components/app-sidebar.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-06/components/nav-main.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-06/components/sidebar-opt-in-form.tsx"
+        }
+      ],
+      "description": "A sidebar with submenus as dropdowns.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "card",
+        "dropdown-menu"
+      ]
+    },
+    {
+      "name": "sidebar-07",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-07/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-07/components/app-sidebar.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-07/components/nav-main.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-07/components/nav-projects.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-07/components/nav-user.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-07/components/team-switcher.tsx"
+        }
+      ],
+      "description": "A sidebar that collapses to icons.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "collapsible",
+        "dropdown-menu",
+        "avatar"
+      ]
+    },
+    {
+      "name": "sidebar-08",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-08/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-08/components/app-sidebar.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-08/components/nav-main.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-08/components/nav-projects.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-08/components/nav-secondary.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-08/components/nav-user.tsx"
+        }
+      ],
+      "description": "An inset sidebar with secondary navigation.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "collapsible",
+        "dropdown-menu",
+        "avatar"
+      ]
+    },
+    {
+      "name": "sidebar-09",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-09/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-09/components/app-sidebar.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-09/components/nav-user.tsx"
+        }
+      ],
+      "description": "Collapsible nested sidebars.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "collapsible",
+        "dropdown-menu",
+        "avatar",
+        "switch",
+        "label"
+      ]
+    },
+    {
+      "name": "sidebar-10",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-10/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-10/components/app-sidebar.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-10/components/nav-actions.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-10/components/nav-favorites.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-10/components/nav-main.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-10/components/nav-secondary.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-10/components/nav-workspaces.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-10/components/team-switcher.tsx"
+        }
+      ],
+      "description": "A sidebar in a popover.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "popover",
+        "collapsible",
+        "dropdown-menu"
+      ]
+    },
+    {
+      "name": "sidebar-11",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-11/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-11/components/app-sidebar.tsx"
+        }
+      ],
+      "description": "A sidebar with a collapsible file tree.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "collapsible"
+      ]
+    },
+    {
+      "name": "sidebar-12",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-12/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-12/components/app-sidebar.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-12/components/calendars.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-12/components/date-picker.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-12/components/nav-user.tsx"
+        }
+      ],
+      "description": "A sidebar with a calendar.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "collapsible",
+        "calendar",
+        "dropdown-menu",
+        "avatar"
+      ]
+    },
+    {
+      "name": "sidebar-13",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-13/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-13/components/settings-dialog.tsx"
+        }
+      ],
+      "description": "A sidebar in a dialog.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": ["sidebar", "breadcrumb", "button", "dialog"]
+    },
+    {
+      "name": "sidebar-14",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-14/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-14/components/app-sidebar.tsx"
+        }
+      ],
+      "description": "A sidebar on the right.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": ["sidebar", "breadcrumb"]
+    },
+    {
+      "name": "sidebar-15",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-15/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-15/components/calendars.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-15/components/date-picker.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-15/components/nav-favorites.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-15/components/nav-main.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-15/components/nav-secondary.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-15/components/nav-user.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-15/components/nav-workspaces.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-15/components/sidebar-left.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-15/components/sidebar-right.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-15/components/team-switcher.tsx"
+        }
+      ],
+      "description": "A left and right sidebar.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "popover",
+        "collapsible",
+        "dropdown-menu",
+        "calendar",
+        "avatar"
+      ]
+    },
+    {
+      "name": "sidebar-16",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/sidebar-16/page.tsx",
+          "target": "app/dashboard/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-16/components/app-sidebar.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-16/components/nav-main.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-16/components/nav-projects.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-16/components/nav-secondary.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-16/components/nav-user.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-16/components/search-form.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/sidebar-16/components/site-header.tsx"
+        }
+      ],
+      "description": "A sidebar with a sticky site header.",
+      "categories": ["sidebar", "dashboard"],
+      "registryDependencies": [
+        "sidebar",
+        "breadcrumb",
+        "separator",
+        "collapsible",
+        "dropdown-menu",
+        "avatar",
+        "button",
+        "label"
+      ]
+    },
+    {
+      "name": "login-01",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/login-01/page.tsx",
+          "target": "app/login/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/login-01/components/login-form.tsx"
+        }
+      ],
+      "description": "A simple login form.",
+      "categories": ["authentication", "login"],
+      "registryDependencies": ["button", "card", "input", "label"]
+    },
+    {
+      "name": "login-02",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/login-02/page.tsx",
+          "target": "app/login/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/login-02/components/login-form.tsx"
+        }
+      ],
+      "description": "A two column login page with a cover image.",
+      "categories": ["authentication", "login"],
+      "registryDependencies": ["button", "card", "input", "label"]
+    },
+    {
+      "name": "login-03",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/login-03/page.tsx",
+          "target": "app/login/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/login-03/components/login-form.tsx"
+        }
+      ],
+      "description": "A login page with a muted background color.",
+      "categories": ["authentication", "login"],
+      "registryDependencies": ["button", "card", "input", "label"]
+    },
+    {
+      "name": "login-04",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/login-04/page.tsx",
+          "target": "app/login/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/login-04/components/login-form.tsx"
+        }
+      ],
+      "description": "A login page with form and image.",
+      "categories": ["authentication", "login"],
+      "registryDependencies": ["button", "card", "input", "label"]
+    },
+    {
+      "name": "login-05",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:page",
+          "path": "src/registry/dubui/blocks/login-05/page.tsx",
+          "target": "app/login/page.tsx"
+        },
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/login-05/components/login-form.tsx"
+        }
+      ],
+      "description": "A simple email-only login page.",
+      "categories": ["authentication", "login"],
+      "registryDependencies": ["button", "card", "input", "label"]
+    },
+    {
+      "name": "calendar-01",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-01.tsx"
+        }
+      ],
+      "description": "A simple calendar.",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-4 py-12 items-start md:py-20 justify-center min-w-0",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-02",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-02.tsx"
+        }
+      ],
+      "description": "Multiple months with single selection.",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-4 py-12 items-start md:py-20 justify-center min-w-0",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-03",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-03.tsx"
+        }
+      ],
+      "description": "Multiple months with multiple selection.",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-4 py-12 items-start md:py-20 justify-center min-w-0",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-04",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-04.tsx"
+        }
+      ],
+      "description": "Single month with range selection",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-4 py-12 items-start md:py-20 justify-center min-w-0 xl:pt-28",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-05",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-05.tsx"
+        }
+      ],
+      "description": "Multiple months with range selection",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-06",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-06.tsx"
+        }
+      ],
+      "description": "Range selection with minimum days",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-07",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-07.tsx"
+        }
+      ],
+      "description": "Range selection with minimum and maximum days",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-08",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-08.tsx"
+        }
+      ],
+      "description": "Calendar with disabled days",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-09",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-09.tsx"
+        }
+      ],
+      "description": "Calendar with disabled weekends",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-10",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-10.tsx"
+        }
+      ],
+      "description": "Today button",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "card", "button"]
+    },
+    {
+      "name": "calendar-11",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-11.tsx"
+        }
+      ],
+      "description": "Start and end of month",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-12",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-12.tsx"
+        }
+      ],
+      "description": "Localized calendar",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "card", "select"]
+    },
+    {
+      "name": "calendar-13",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-13.tsx"
+        }
+      ],
+      "description": "With Month and Year Dropdown",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "label", "select"]
+    },
+    {
+      "name": "calendar-14",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-14.tsx"
+        }
+      ],
+      "description": "With Booked/Unavailable Days",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-15",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-15.tsx"
+        }
+      ],
+      "description": "With Week Numbers",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-16",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-16.tsx"
+        }
+      ],
+      "description": "With time picker",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start justify-center min-w-0",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "card", "input", "label"]
+    },
+    {
+      "name": "calendar-17",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-17.tsx"
+        }
+      ],
+      "description": "With time picker inline",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "card", "input", "label"]
+    },
+    {
+      "name": "calendar-18",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-18.tsx"
+        }
+      ],
+      "description": "Variable size",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-19",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-19.tsx"
+        }
+      ],
+      "description": "With presets",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start justify-center min-w-0",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "card", "input", "label"],
+      "dependencies": ["date-fns"]
+    },
+    {
+      "name": "calendar-20",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-20.tsx"
+        }
+      ],
+      "description": "With time presets",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start justify-center min-w-0",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "card", "button"]
+    },
+    {
+      "name": "calendar-21",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-21.tsx"
+        }
+      ],
+      "description": "Custom days and formatters",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start justify-center min-w-0",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-22",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-22.tsx"
+        }
+      ],
+      "description": "Date picker",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "popover", "button", "label"]
+    },
+    {
+      "name": "calendar-23",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-23.tsx"
+        }
+      ],
+      "description": "Date range picker",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "popover", "button", "label"]
+    },
+    {
+      "name": "calendar-24",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-24.tsx"
+        }
+      ],
+      "description": "Date and Time picker",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "popover", "button", "label"]
+    },
+    {
+      "name": "calendar-25",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-25.tsx"
+        }
+      ],
+      "description": "Date and Time range picker",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "popover", "button", "label"]
+    },
+    {
+      "name": "calendar-26",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-26.tsx"
+        }
+      ],
+      "description": "Date range picker with time",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": [
+        "calendar",
+        "popover",
+        "button",
+        "input",
+        "label"
+      ]
+    },
+    {
+      "name": "calendar-27",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-27.tsx"
+        }
+      ],
+      "description": "Chart filter",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start justify-center min-w-0",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "chart", "card", "popover", "button"]
+    },
+    {
+      "name": "calendar-28",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-28.tsx"
+        }
+      ],
+      "description": "Input with date picker",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": [
+        "calendar",
+        "input",
+        "label",
+        "popover",
+        "button"
+      ]
+    },
+    {
+      "name": "calendar-29",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-29.tsx"
+        }
+      ],
+      "description": "Natural language date picker",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": [
+        "calendar",
+        "input",
+        "label",
+        "popover",
+        "button"
+      ],
+      "dependencies": ["chrono-node"]
+    },
+    {
+      "name": "calendar-30",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-30.tsx"
+        }
+      ],
+      "description": "With little-date",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": [
+        "calendar",
+        "input",
+        "label",
+        "popover",
+        "button"
+      ]
+    },
+    {
+      "name": "calendar-31",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-31.tsx"
+        }
+      ],
+      "description": "With event slots",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0",
+        "iframeHeight": "700px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "card", "button"]
+    },
+    {
+      "name": "calendar-32",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/blocks/calendar-32.tsx"
+        }
+      ],
+      "description": "Date picker in a drawer",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar", "button", "drawer"]
+    },
+    {
+      "name": "chart-area-axes",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-area-axes.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-area"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-area-default",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-area-default.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-area"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-area-gradient",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-area-gradient.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-area"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-area-icons",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-area-icons.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-area"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-area-interactive",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/charts/chart-area-interactive.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-area"],
+      "registryDependencies": ["card", "chart", "select"]
+    },
+    {
+      "name": "chart-area-legend",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-area-legend.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-area"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-area-linear",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-area-linear.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-area"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-area-stacked-expand",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-area-stacked-expand.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-area"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-area-stacked",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-area-stacked.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-area"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-area-step",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-area-step.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-area"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-bar-active",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-bar-active.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-bar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-bar-default",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-bar-default.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-bar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-bar-horizontal",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-bar-horizontal.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-bar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-bar-interactive",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-bar-interactive.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-bar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-bar-label-custom",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-bar-label-custom.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-bar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-bar-label",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-bar-label.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-bar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-bar-mixed",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-bar-mixed.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-bar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-bar-multiple",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-bar-multiple.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-bar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-bar-negative",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-bar-negative.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-bar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-bar-stacked",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-bar-stacked.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-bar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-line-default",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-line-default.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-line"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-line-dots-colors",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-line-dots-colors.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-line"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-line-dots-custom",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-line-dots-custom.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-line"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-line-dots",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-line-dots.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-line"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-line-interactive",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-line-interactive.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-line"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-line-label-custom",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-line-label-custom.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-line"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-line-label",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-line-label.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-line"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-line-linear",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-line-linear.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-line"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-line-multiple",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-line-multiple.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-line"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-line-step",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-line-step.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-line"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-pie-donut-active",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-pie-donut-active.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-pie"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-pie-donut-text",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-pie-donut-text.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-pie"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-pie-donut",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-pie-donut.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-pie"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-pie-interactive",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-pie-interactive.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-pie"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-pie-label-custom",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-pie-label-custom.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-pie"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-pie-label-list",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-pie-label-list.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-pie"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-pie-label",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-pie-label.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-pie"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-pie-legend",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-pie-legend.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-pie"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-pie-separator-none",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-pie-separator-none.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-pie"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-pie-simple",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-pie-simple.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-pie"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-pie-stacked",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-pie-stacked.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-pie"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-default",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-default.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-dots",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-dots.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-grid-circle-fill",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-grid-circle-fill.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-grid-circle-no-lines",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-grid-circle-no-lines.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-grid-circle",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-grid-circle.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-grid-custom",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-grid-custom.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-grid-fill",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-grid-fill.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-grid-none",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-grid-none.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-icons",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-icons.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-label-custom",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-label-custom.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-legend",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-legend.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-lines-only",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-lines-only.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-multiple",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-multiple.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radar-radius",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radar-radius.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radar"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radial-grid",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radial-grid.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radial"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radial-label",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radial-label.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radial"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radial-shape",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radial-shape.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radial"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radial-simple",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radial-simple.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radial"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radial-stacked",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radial-stacked.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radial"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-radial-text",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-radial-text.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-radial"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-tooltip-default",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-tooltip-default.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-tooltip"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-tooltip-indicator-line",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-tooltip-indicator-line.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-tooltip"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-tooltip-indicator-none",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-tooltip-indicator-none.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-tooltip"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-tooltip-label-none",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-tooltip-label-none.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-tooltip"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-tooltip-label-custom",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-tooltip-label-custom.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-tooltip"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-tooltip-label-formatter",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-tooltip-label-formatter.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-tooltip"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-tooltip-formatter",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-tooltip-formatter.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-tooltip"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-tooltip-icons",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-tooltip-icons.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-tooltip"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "chart-tooltip-advanced",
+      "type": "registry:block",
+      "files": [
+        {
+          "type": "registry:block",
+          "path": "src/registry/dubui/charts/chart-tooltip-advanced.tsx"
+        }
+      ],
+      "categories": ["charts", "charts-tooltip"],
+      "registryDependencies": ["card", "chart"]
+    },
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "files": [
+        {
+          "type": "registry:lib",
+          "path": "src/registry/dubui/lib/utils.ts"
+        }
+      ],
+      "dependencies": ["clsx", "tailwind-merge"]
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "files": [
+        {
+          "type": "registry:hook",
+          "path": "src/registry/dubui/hooks/use-mobile.ts"
+        }
+      ]
+    },
+    {
+      "name": "theme-daylight",
+      "type": "registry:theme",
+      "cssVars": {
+        "dark": {
+          "accent": "36 64% 57%",
+          "accent-foreground": "36 72% 17%",
+          "background": "36 39% 88%",
+          "border": "36 45% 60%",
+          "card": "36 46% 82%",
+          "card-foreground": "36 45% 20%",
+          "chart-1": "25 34% 28%",
+          "chart-2": "26 36% 34%",
+          "chart-3": "28 40% 40%",
+          "chart-4": "31 41% 48%",
+          "chart-5": "35 43% 53%",
+          "destructive": "0 84% 37%",
+          "destructive-foreground": "0 0% 98%",
+          "foreground": "36 45% 15%",
+          "input": "36 45% 60%",
+          "muted": "36 33% 75%",
+          "muted-foreground": "36 45% 25%",
+          "popover": "0 0% 100%",
+          "popover-foreground": "240 10% 3.9%",
+          "primary": "36 45% 70%",
+          "primary-foreground": "36 45% 11%",
+          "ring": "36 45% 30%",
+          "secondary": "40 35% 77%",
+          "secondary-foreground": "36 45% 25%"
+        },
+        "light": {
+          "accent": "36 64% 57%",
+          "accent-foreground": "36 72% 17%",
+          "background": "36 39% 88%",
+          "border": "36 45% 60%",
+          "card": "36 46% 82%",
+          "card-foreground": "36 45% 20%",
+          "chart-1": "25 34% 28%",
+          "chart-2": "26 36% 34%",
+          "chart-3": "28 40% 40%",
+          "chart-4": "31 41% 48%",
+          "chart-5": "35 43% 53%",
+          "destructive": "0 84% 37%",
+          "destructive-foreground": "0 0% 98%",
+          "foreground": "36 45% 15%",
+          "input": "36 45% 60%",
+          "muted": "36 33% 75%",
+          "muted-foreground": "36 45% 25%",
+          "popover": "0 0% 100%",
+          "popover-foreground": "240 10% 3.9%",
+          "primary": "36 45% 70%",
+          "primary-foreground": "36 45% 11%",
+          "ring": "36 45% 30%",
+          "secondary": "40 35% 77%",
+          "secondary-foreground": "36 45% 25%"
+        }
+      }
+    },
+    {
+      "name": "theme-midnight",
+      "type": "registry:theme",
+      "cssVars": {
+        "dark": {
+          "accent": "240 0% 13%",
+          "accent-foreground": "60 0% 100%",
+          "background": "240 5% 6%",
+          "border": "240 6% 20%",
+          "card": "240 4% 10%",
+          "card-foreground": "60 5% 90%",
+          "chart-1": "359 2% 90%",
+          "chart-2": "240 1% 74%",
+          "chart-3": "240 1% 58%",
+          "chart-4": "240 1% 42%",
+          "chart-5": "240 2% 26%",
+          "destructive": "0 60% 50%",
+          "destructive-foreground": "0 0% 98%",
+          "foreground": "60 5% 90%",
+          "input": "240 6% 20%",
+          "muted": "240 5% 25%",
+          "muted-foreground": "60 5% 85%",
+          "popover": "240 5% 15%",
+          "popover-foreground": "60 5% 85%",
+          "primary": "240 0% 90%",
+          "primary-foreground": "60 0% 0%",
+          "ring": "240 5% 90%",
+          "secondary": "240 4% 15%",
+          "secondary-foreground": "60 5% 85%"
+        },
+        "light": {
+          "accent": "240 0% 13%",
+          "accent-foreground": "60 0% 100%",
+          "background": "240 5% 6%",
+          "border": "240 6% 20%",
+          "card": "240 4% 10%",
+          "card-foreground": "60 5% 90%",
+          "chart-1": "359 2% 90%",
+          "chart-2": "240 1% 74%",
+          "chart-3": "240 1% 58%",
+          "chart-4": "240 1% 42%",
+          "chart-5": "240 2% 26%",
+          "destructive": "0 60% 50%",
+          "destructive-foreground": "0 0% 98%",
+          "foreground": "60 5% 90%",
+          "input": "240 6% 20%",
+          "muted": "240 5% 25%",
+          "muted-foreground": "60 5% 85%",
+          "popover": "240 5% 15%",
+          "popover-foreground": "60 5% 85%",
+          "primary": "240 0% 90%",
+          "primary-foreground": "60 0% 0%",
+          "ring": "240 5% 90%",
+          "secondary": "240 4% 15%",
+          "secondary-foreground": "60 5% 85%"
+        }
+      }
+    },
+    {
+      "name": "theme-emerald",
+      "type": "registry:theme",
+      "cssVars": {
+        "dark": {
+          "accent": "240 3.7% 15.9%",
+          "accent-foreground": "0 0% 98%",
+          "background": "240 10% 3.9%",
+          "border": "240 3.7% 15.9%",
+          "card": "240 10% 3.9%",
+          "card-foreground": "0 0% 98%",
+          "chart-1": "142 88% 28%",
+          "chart-2": "139 65% 20%",
+          "chart-3": "140 74% 24%",
+          "chart-4": "137 55% 15%",
+          "chart-5": "141 40% 9%",
+          "destructive": "0 72% 51%",
+          "destructive-foreground": "0 0% 98%",
+          "foreground": "0 0% 98%",
+          "input": "240 3.7% 15.9%",
+          "muted": "240 3.7% 15.9%",
+          "muted-foreground": "240 5% 64.9%",
+          "popover": "240 10% 3.9%",
+          "popover-foreground": "0 0% 98%",
+          "primary": "142 86% 28%",
+          "primary-foreground": "356 29% 98%",
+          "ring": "142 86% 28%",
+          "secondary": "240 4.8% 95.9%",
+          "secondary-foreground": "240 5.9% 10%"
+        },
+        "light": {
+          "accent": "240 4.8% 95.9%",
+          "accent-foreground": "240 5.9% 10%",
+          "background": "0 0% 100%",
+          "border": "240 5.9% 90%",
+          "card": "0 0% 100%",
+          "card-foreground": "240 10% 3.9%",
+          "chart-1": "139 65% 20%",
+          "chart-2": "140 74% 44%",
+          "chart-3": "142 88% 28%",
+          "chart-4": "137 55% 15%",
+          "chart-5": "141 40% 9%",
+          "destructive": "0 72% 51%",
+          "destructive-foreground": "0 0% 98%",
+          "foreground": "240 10% 3.9%",
+          "input": "240 5.9% 90%",
+          "muted": "240 4.8% 95.9%",
+          "muted-foreground": "240 3.8% 45%",
+          "popover": "0 0% 100%",
+          "popover-foreground": "240 10% 3.9%",
+          "primary": "142 86% 28%",
+          "primary-foreground": "356 29% 98%",
+          "ring": "142 86% 28%",
+          "secondary": "240 4.8% 95.9%",
+          "secondary-foreground": "240 5.9% 10%"
+        }
+      }
+    },
+    {
+      "name": "accordion-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/accordion-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["accordion"]
+    },
+    {
+      "name": "alert-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/alert-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["alert"]
+    },
+    {
+      "name": "alert-destructive",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/alert-destructive.tsx"
+        }
+      ],
+      "registryDependencies": ["alert"]
+    },
+    {
+      "name": "alert-dialog-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/alert-dialog-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["alert-dialog", "button"]
+    },
+    {
+      "name": "aspect-ratio-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/aspect-ratio-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["aspect-ratio"]
+    },
+    {
+      "name": "avatar-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/avatar-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["avatar"]
+    },
+    {
+      "name": "badge-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/badge-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["badge"]
+    },
+    {
+      "name": "badge-destructive",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/badge-destructive.tsx"
+        }
+      ],
+      "registryDependencies": ["badge"]
+    },
+    {
+      "name": "badge-outline",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/badge-outline.tsx"
+        }
+      ],
+      "registryDependencies": ["badge"]
+    },
+    {
+      "name": "badge-secondary",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/badge-secondary.tsx"
+        }
+      ],
+      "registryDependencies": ["badge"]
+    },
+    {
+      "name": "breadcrumb-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/breadcrumb-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["breadcrumb"]
+    },
+    {
+      "name": "breadcrumb-separator",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/breadcrumb-separator.tsx"
+        }
+      ],
+      "registryDependencies": ["breadcrumb"]
+    },
+    {
+      "name": "breadcrumb-dropdown",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/breadcrumb-dropdown.tsx"
+        }
+      ],
+      "registryDependencies": ["breadcrumb"]
+    },
+    {
+      "name": "breadcrumb-ellipsis",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/breadcrumb-ellipsis.tsx"
+        }
+      ],
+      "registryDependencies": ["breadcrumb"]
+    },
+    {
+      "name": "breadcrumb-link",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/breadcrumb-link.tsx"
+        }
+      ],
+      "registryDependencies": ["breadcrumb"]
+    },
+    {
+      "name": "breadcrumb-responsive",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/breadcrumb-responsive.tsx"
+        }
+      ],
+      "registryDependencies": ["breadcrumb"]
+    },
+    {
+      "name": "button-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/button-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "button-secondary",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/button-secondary.tsx"
+        }
+      ],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "button-destructive",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/button-destructive.tsx"
+        }
+      ],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "button-outline",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/button-outline.tsx"
+        }
+      ],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "button-ghost",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/button-ghost.tsx"
+        }
+      ],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "button-link",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/button-link.tsx"
+        }
+      ],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "button-with-icon",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/button-with-icon.tsx"
+        }
+      ],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "button-loading",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/button-loading.tsx"
+        }
+      ],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "button-icon",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/button-icon.tsx"
+        }
+      ],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "button-as-child",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/button-as-child.tsx"
+        }
+      ],
+      "registryDependencies": ["button"]
+    },
+    {
+      "name": "calendar-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/calendar-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "calendar-form",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/calendar-form.tsx"
+        }
+      ],
+      "registryDependencies": ["calendar", "form", "popover"]
+    },
+    {
+      "name": "card-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/card-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["card", "button", "switch"]
+    },
+    {
+      "name": "card-with-form",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/card-with-form.tsx"
+        }
+      ],
+      "registryDependencies": ["button", "card", "input", "label", "select"]
+    },
+    {
+      "name": "carousel-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/carousel-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["carousel"]
+    },
+    {
+      "name": "carousel-size",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/carousel-size.tsx"
+        }
+      ],
+      "registryDependencies": ["carousel"]
+    },
+    {
+      "name": "carousel-spacing",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/carousel-spacing.tsx"
+        }
+      ],
+      "registryDependencies": ["carousel"]
+    },
+    {
+      "name": "carousel-orientation",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/carousel-orientation.tsx"
+        }
+      ],
+      "registryDependencies": ["carousel"]
+    },
+    {
+      "name": "carousel-api",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/carousel-api.tsx"
+        }
+      ],
+      "registryDependencies": ["carousel"]
+    },
+    {
+      "name": "carousel-plugin",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/carousel-plugin.tsx"
+        }
+      ],
+      "registryDependencies": ["carousel"]
+    },
+    {
+      "name": "checkbox-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/checkbox-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["checkbox"]
+    },
+    {
+      "name": "checkbox-disabled",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/checkbox-disabled.tsx"
+        }
+      ],
+      "registryDependencies": ["checkbox"]
+    },
+    {
+      "name": "checkbox-form-multiple",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/checkbox-form-multiple.tsx"
+        }
+      ],
+      "registryDependencies": ["checkbox", "form"]
+    },
+    {
+      "name": "checkbox-form-single",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/checkbox-form-single.tsx"
+        }
+      ],
+      "registryDependencies": ["checkbox", "form"]
+    },
+    {
+      "name": "checkbox-with-text",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/checkbox-with-text.tsx"
+        }
+      ],
+      "registryDependencies": ["checkbox"]
+    },
+    {
+      "name": "collapsible-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/collapsible-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["collapsible"]
+    },
+    {
+      "name": "combobox-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/combobox-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["command"]
+    },
+    {
+      "name": "combobox-dropdown-menu",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/combobox-dropdown-menu.tsx"
+        }
+      ],
+      "registryDependencies": ["command", "dropdown-menu", "button"]
+    },
+    {
+      "name": "combobox-form",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/combobox-form.tsx"
+        }
+      ],
+      "registryDependencies": ["command", "form"]
+    },
+    {
+      "name": "combobox-popover",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/combobox-popover.tsx"
+        }
+      ],
+      "registryDependencies": ["combobox", "popover"]
+    },
+    {
+      "name": "combobox-responsive",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/combobox-responsive.tsx"
+        }
+      ],
+      "registryDependencies": ["combobox", "popover", "drawer"]
+    },
+    {
+      "name": "command-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/command-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["command"]
+    },
+    {
+      "name": "command-dialog",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/command-dialog.tsx"
+        }
+      ],
+      "registryDependencies": ["command", "dialog"]
+    },
+    {
+      "name": "context-menu-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/context-menu-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["context-menu"]
+    },
+    {
+      "name": "data-table-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/data-table-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["data-table"]
+    },
+    {
+      "name": "date-picker-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/date-picker-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["button", "calendar", "popover"],
+      "dependencies": ["date-fns"]
+    },
+    {
+      "name": "date-picker-form",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/date-picker-form.tsx"
+        }
+      ],
+      "registryDependencies": ["button", "calendar", "form", "popover"],
+      "dependencies": ["date-fns"]
+    },
+    {
+      "name": "date-picker-with-presets",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/date-picker-with-presets.tsx"
+        }
+      ],
+      "registryDependencies": ["button", "calendar", "popover", "select"],
+      "dependencies": ["date-fns"]
+    },
+    {
+      "name": "date-picker-with-range",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/date-picker-with-range.tsx"
+        }
+      ],
+      "registryDependencies": ["button", "calendar", "popover"],
+      "dependencies": ["date-fns"]
+    },
+    {
+      "name": "dialog-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/dialog-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["dialog"]
+    },
+    {
+      "name": "dialog-close-button",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/dialog-close-button.tsx"
+        }
+      ],
+      "registryDependencies": ["dialog", "button"]
+    },
+    {
+      "name": "drawer-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/drawer-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["drawer"]
+    },
+    {
+      "name": "drawer-dialog",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/drawer-dialog.tsx"
+        }
+      ],
+      "registryDependencies": ["drawer", "dialog"]
+    },
+    {
+      "name": "dropdown-menu-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/dropdown-menu-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["dropdown-menu"]
+    },
+    {
+      "name": "dropdown-menu-checkboxes",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/dropdown-menu-checkboxes.tsx"
+        }
+      ],
+      "registryDependencies": ["dropdown-menu", "checkbox"]
+    },
+    {
+      "name": "dropdown-menu-radio-group",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/dropdown-menu-radio-group.tsx"
+        }
+      ],
+      "registryDependencies": ["dropdown-menu", "radio-group"]
+    },
+    {
+      "name": "hover-card-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/hover-card-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["hover-card"]
+    },
+    {
+      "name": "input-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["input"]
+    },
+    {
+      "name": "input-disabled",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-disabled.tsx"
+        }
+      ],
+      "registryDependencies": ["input"]
+    },
+    {
+      "name": "input-file",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-file.tsx"
+        }
+      ],
+      "registryDependencies": ["input"]
+    },
+    {
+      "name": "input-form",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-form.tsx"
+        }
+      ],
+      "registryDependencies": ["input", "button", "form"]
+    },
+    {
+      "name": "input-with-button",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-with-button.tsx"
+        }
+      ],
+      "registryDependencies": ["input", "button"]
+    },
+    {
+      "name": "input-with-label",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-with-label.tsx"
+        }
+      ],
+      "registryDependencies": ["input", "button", "label"]
+    },
+    {
+      "name": "input-with-text",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-with-text.tsx"
+        }
+      ],
+      "registryDependencies": ["input", "button", "label"]
+    },
+    {
+      "name": "input-otp-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-otp-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["input-otp"]
+    },
+    {
+      "name": "input-otp-pattern",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-otp-pattern.tsx"
+        }
+      ],
+      "registryDependencies": ["input-otp"]
+    },
+    {
+      "name": "input-otp-separator",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-otp-separator.tsx"
+        }
+      ],
+      "registryDependencies": ["input-otp"]
+    },
+    {
+      "name": "input-otp-controlled",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-otp-controlled.tsx"
+        }
+      ],
+      "registryDependencies": ["input-otp"]
+    },
+    {
+      "name": "input-otp-form",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/input-otp-form.tsx"
+        }
+      ],
+      "registryDependencies": ["input-otp", "form"]
+    },
+    {
+      "name": "label-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/label-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["label"]
+    },
+    {
+      "name": "menubar-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/menubar-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["menubar"]
+    },
+    {
+      "name": "navigation-menu-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/navigation-menu-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["navigation-menu"]
+    },
+    {
+      "name": "pagination-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/pagination-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["pagination"]
+    },
+    {
+      "name": "popover-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/popover-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["popover"]
+    },
+    {
+      "name": "progress-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/progress-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["progress"]
+    },
+    {
+      "name": "radio-group-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/radio-group-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["radio-group"]
+    },
+    {
+      "name": "radio-group-form",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/radio-group-form.tsx"
+        }
+      ],
+      "registryDependencies": ["radio-group", "form"]
+    },
+    {
+      "name": "resizable-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/resizable-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["resizable"]
+    },
+    {
+      "name": "resizable-demo-with-handle",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/resizable-demo-with-handle.tsx"
+        }
+      ],
+      "registryDependencies": ["resizable"]
+    },
+    {
+      "name": "resizable-vertical",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/resizable-vertical.tsx"
+        }
+      ],
+      "registryDependencies": ["resizable"]
+    },
+    {
+      "name": "resizable-handle",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/resizable-handle.tsx"
+        }
+      ],
+      "registryDependencies": ["resizable"]
+    },
+    {
+      "name": "scroll-area-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/scroll-area-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["scroll-area"]
+    },
+    {
+      "name": "scroll-area-horizontal-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/scroll-area-horizontal-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["scroll-area"]
+    },
+    {
+      "name": "select-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/select-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["select"]
+    },
+    {
+      "name": "select-scrollable",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/select-scrollable.tsx"
+        }
+      ],
+      "registryDependencies": ["select"]
+    },
+    {
+      "name": "select-form",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/select-form.tsx"
+        }
+      ],
+      "registryDependencies": ["select"]
+    },
+    {
+      "name": "separator-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/separator-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["separator"]
+    },
+    {
+      "name": "sheet-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/sheet-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["sheet"]
+    },
+    {
+      "name": "sheet-side",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/sheet-side.tsx"
+        }
+      ],
+      "registryDependencies": ["sheet"]
+    },
+    {
+      "name": "skeleton-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/skeleton-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["skeleton"]
+    },
+    {
+      "name": "skeleton-card",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/skeleton-card.tsx"
+        }
+      ],
+      "registryDependencies": ["skeleton"]
+    },
+    {
+      "name": "slider-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/slider-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["slider"]
+    },
+    {
+      "name": "sonner-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/sonner-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["sonner"]
+    },
+    {
+      "name": "switch-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/switch-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["switch"]
+    },
+    {
+      "name": "switch-form",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/switch-form.tsx"
+        }
+      ],
+      "registryDependencies": ["switch", "form"]
+    },
+    {
+      "name": "table-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/table-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["table"]
+    },
+    {
+      "name": "tabs-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/tabs-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["tabs"]
+    },
+    {
+      "name": "textarea-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/textarea-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["textarea"]
+    },
+    {
+      "name": "textarea-disabled",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/textarea-disabled.tsx"
+        }
+      ],
+      "registryDependencies": ["textarea"]
+    },
+    {
+      "name": "textarea-form",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/textarea-form.tsx"
+        }
+      ],
+      "registryDependencies": ["textarea", "form"]
+    },
+    {
+      "name": "textarea-with-button",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/textarea-with-button.tsx"
+        }
+      ],
+      "registryDependencies": ["textarea", "button"]
+    },
+    {
+      "name": "textarea-with-label",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/textarea-with-label.tsx"
+        }
+      ],
+      "registryDependencies": ["textarea", "label"]
+    },
+    {
+      "name": "textarea-with-text",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/textarea-with-text.tsx"
+        }
+      ],
+      "registryDependencies": ["textarea", "label"]
+    },
+    {
+      "name": "toggle-group-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-group-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle-group"]
+    },
+    {
+      "name": "toggle-group-disabled",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-group-disabled.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle-group"]
+    },
+    {
+      "name": "toggle-group-lg",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-group-lg.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle-group"]
+    },
+    {
+      "name": "toggle-group-outline",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-group-outline.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle-group"]
+    },
+    {
+      "name": "toggle-group-sm",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-group-sm.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle-group"]
+    },
+    {
+      "name": "toggle-group-single",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-group-single.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle-group"]
+    },
+    {
+      "name": "toggle-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle"]
+    },
+    {
+      "name": "toggle-disabled",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-disabled.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle"]
+    },
+    {
+      "name": "toggle-lg",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-lg.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle"]
+    },
+    {
+      "name": "toggle-outline",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-outline.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle"]
+    },
+    {
+      "name": "toggle-sm",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-sm.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle"]
+    },
+    {
+      "name": "toggle-with-text",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/toggle-with-text.tsx"
+        }
+      ],
+      "registryDependencies": ["toggle"]
+    },
+    {
+      "name": "tooltip-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/tooltip-demo.tsx"
+        }
+      ],
+      "registryDependencies": ["tooltip"]
+    },
+    {
+      "name": "typography-blockquote",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-blockquote.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-demo.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-h1",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-h1.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-h2",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-h2.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-h3",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-h3.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-h4",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-h4.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-inline-code",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-inline-code.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-large",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-large.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-lead",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-lead.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-list",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-list.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-muted",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-muted.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-p",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-p.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-small",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-small.tsx"
+        }
+      ]
+    },
+    {
+      "name": "typography-table",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/typography-table.tsx"
+        }
+      ]
+    },
+    {
+      "name": "mode-toggle",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/mode-toggle.tsx"
+        }
+      ]
+    },
+    {
+      "name": "chart-bar-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/chart-bar-demo.tsx"
+        }
+      ]
+    },
+    {
+      "name": "chart-bar-demo-grid",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/chart-bar-demo-grid.tsx"
+        }
+      ]
+    },
+    {
+      "name": "chart-bar-demo-axis",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/chart-bar-demo-axis.tsx"
+        }
+      ]
+    },
+    {
+      "name": "chart-bar-demo-tooltip",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/chart-bar-demo-tooltip.tsx"
+        }
+      ]
+    },
+    {
+      "name": "chart-bar-demo-legend",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/chart-bar-demo-legend.tsx"
+        }
+      ]
+    },
+    {
+      "name": "chart-tooltip-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/chart-tooltip-demo.tsx"
+        }
+      ]
+    },
+    {
+      "name": "calendar-hijri",
+      "type": "registry:example",
+      "files": [
+        {
+          "type": "registry:example",
+          "path": "src/registry/dubui/examples/calendar-hijri.tsx"
+        }
+      ],
+      "description": "A Persian calendar.",
+      "categories": ["calendar", "date"],
+      "meta": {
+        "container": "w-full bg-surface min-h-svh flex px-4 py-12 items-start md:py-20 justify-center min-w-0",
+        "iframeHeight": "600px",
+        "mobile": "component"
+      },
+      "registryDependencies": ["calendar"]
+    },
+    {
+      "name": "sidebar-demo",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-demo.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-header",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-header.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-footer",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-footer.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-group",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-group.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-group-collapsible",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-group-collapsible.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-group-action",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-group-action.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-menu",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-menu.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-menu-action",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-menu-action.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-menu-sub",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-menu-sub.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-menu-collapsible",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-menu-collapsible.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-menu-badge",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-menu-badge.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-rsc",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-rsc.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sidebar-controlled",
+      "type": "registry:internal",
+      "files": [
+        {
+          "type": "registry:component",
+          "path": "src/registry/dubui/internal/sidebar-controlled.tsx"
         }
       ]
     }

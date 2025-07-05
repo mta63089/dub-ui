@@ -8,13 +8,13 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york-v4/ui/card"
+} from "@/registry/dubui/ui/card"
 import {
   ChartConfig,
   ChartContainer,
   ChartLegend,
   ChartLegendContent,
-} from "@/registry/new-york-v4/ui/chart"
+} from "@/registry/dubui/ui/chart"
 
 export const description = "A pie chart with a legend"
 

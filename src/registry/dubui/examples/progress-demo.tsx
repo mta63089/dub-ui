@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-import { Progress } from "@/registry/new-york-v4/ui/progress"
+import { Progress } from "@/registry/dubui/ui/progress"
 
 export default function ProgressDemo() {
   const [progress, setProgress] = React.useState(13)

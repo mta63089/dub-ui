@@ -1,8 +1,8 @@
 "use client"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
-import { Input } from "@/registry/new-york-v4/ui/input"
-import { Label } from "@/registry/new-york-v4/ui/label"
+import { Button } from "@/registry/dubui/ui/button"
+import { Input } from "@/registry/dubui/ui/input"
+import { Label } from "@/registry/dubui/ui/label"
 import {
   Sheet,
   SheetClose,
@@ -12,7 +12,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/registry/new-york-v4/ui/sheet"
+} from "@/registry/dubui/ui/sheet"
 
 const SHEET_SIDES = ["top", "right", "bottom", "left"] as const
 
@@ -30,7 +30,8 @@ export default function SheetSide() {
             <SheetHeader>
               <SheetTitle>Edit profile</SheetTitle>
               <SheetDescription>
-                Make changes to your profile here. Click save when you're done.
+                Make changes to your profile here. Click save when you&apos;re
+                done.
               </SheetDescription>
             </SheetHeader>
             <div className="grid gap-4 py-4">

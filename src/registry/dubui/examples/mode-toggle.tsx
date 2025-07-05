@@ -1,16 +1,15 @@
 "use client"
 
-import * as React from "react"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/dubui/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/registry/new-york-v4/ui/dropdown-menu"
+} from "@/registry/dubui/ui/dropdown-menu"
 
 export default function ModeToggle() {
   const { setTheme } = useTheme()

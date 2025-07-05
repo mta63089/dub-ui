@@ -10,13 +10,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york-v4/ui/card"
+} from "@/registry/dubui/ui/card"
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/registry/new-york-v4/ui/chart"
+} from "@/registry/dubui/ui/chart"
 
 export const description = "A radar chart with a custom label"
 
@@ -69,13 +69,19 @@ export function ChartRadarLabelCustom() {
             />
             <PolarAngleAxis
               dataKey="month"
-              tick={({ x, y, textAnchor, value, index, ...props }) => {
+              tick={({ x, y, textAnchor, index, ...props }) => {
                 const data = chartData[index]
 
                 return (
                   <text
                     x={x}
-                    y={index === 0 ? y - 10 : y}
+                    y={
+                      index === 0
+                        ? typeof y === "number"
+                          ? y - 10
+                          : 0
+                        : (y ?? 0)
+                    }
                     textAnchor={textAnchor}
                     fontSize={13}
                     fontWeight={500}

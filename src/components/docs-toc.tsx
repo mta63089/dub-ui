@@ -1,16 +1,16 @@
 "use client"
 
 import * as React from "react"
-import { IconMenu3 } from "@tabler/icons-react"
+import { Menu } from "lucide-react"
 
 import { cn } from "@/lib/utils"
-import { Button } from "@/registry/new-york-v4/ui/button"
+import { Button } from "@/registry/dubui/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/registry/new-york-v4/ui/dropdown-menu"
+} from "@/registry/dubui/ui/dropdown-menu"
 
 function useActiveItem(itemIds: string[]) {
   const [activeId, setActiveId] = React.useState<string | null>(null)
@@ -80,7 +80,7 @@ export function DocsTableOfContents({
             size="sm"
             className={cn("h-8 md:h-7", className)}
           >
-            <IconMenu3 /> On This Page
+            <Menu /> On This Page
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent

@@ -1,8 +1,5 @@
-import { Label } from "@/registry/new-york-v4/ui/label"
-import {
-  RadioGroup,
-  RadioGroupItem,
-} from "@/registry/new-york-v4/ui/radio-group"
+import { Label } from "@/registry/dubui/ui/label"
+import { RadioGroup, RadioGroupItem } from "@/registry/dubui/ui/radio-group"
 
 export default function RadioGroupDemo() {
   return (

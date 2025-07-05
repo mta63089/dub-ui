@@ -1,6 +1,6 @@
 import { Italic } from "lucide-react"
 
-import { Toggle } from "@/registry/new-york-v4/ui/toggle"
+import { Toggle } from "@/registry/dubui/ui/toggle"
 
 export default function ToggleOutline() {
   return (

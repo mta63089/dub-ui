@@ -61,12 +61,12 @@ const Layout = ({
     }
   })
 
-  const attrs = !value ? ["layout-fixed", "layout-full"] : Object.values(value)
-
   const applyLayout = React.useCallback(
     (layout: Layout) => {
       if (!layout) return
-
+      const attrs = !value
+        ? ["layout-fixed", "layout-full"]
+        : Object.values(value)
       const name = value ? value[layout] : `layout-${layout}`
       const d = document.documentElement
 
@@ -86,7 +86,7 @@ const Layout = ({
       if (Array.isArray(attribute)) attribute.forEach(handleAttribute)
       else handleAttribute(attribute)
     },
-    [attrs, attribute, value]
+    [attribute, value]
   )
 
   const setLayout = React.useCallback(
@@ -157,4 +157,4 @@ const LayoutProvider = (props: LayoutProviderProps) => {
   return <Layout {...props} />
 }
 
-export { useLayout, LayoutProvider }
+export { LayoutProvider, useLayout }

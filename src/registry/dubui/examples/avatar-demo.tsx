@@ -1,8 +1,4 @@
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/registry/new-york-v4/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/registry/dubui/ui/avatar"
 
 export default function AvatarDemo() {
   return (
