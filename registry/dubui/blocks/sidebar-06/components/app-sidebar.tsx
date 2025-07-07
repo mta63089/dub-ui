@@ -1,8 +1,8 @@
 import * as React from "react"
 import { GalleryVerticalEnd } from "lucide-react"
 
-import { NavMain } from "@/registry/new-york-v4/blocks/sidebar-06/components/nav-main"
-import { SidebarOptInForm } from "@/registry/new-york-v4/blocks/sidebar-06/components/sidebar-opt-in-form"
+import { NavMain } from "@/registry/dubui/blocks/sidebar-06/components/nav-main"
+import { SidebarOptInForm } from "@/registry/dubui/blocks/sidebar-06/components/sidebar-opt-in-form"
 import {
   Sidebar,
   SidebarContent,
@@ -12,7 +12,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarRail,
-} from "@/registry/new-york-v4/ui/sidebar"
+} from "@/registry/dubui/ui/sidebar"
 
 // This is sample data.
 const data = {

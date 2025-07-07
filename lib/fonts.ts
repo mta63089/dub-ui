@@ -1,6 +1,6 @@
 import {
   Geist_Mono as FontMono,
-  Geist as FontSans,
+  Hanken_Grotesk as FontSans,
   Inter,
 } from "next/font/google"
 

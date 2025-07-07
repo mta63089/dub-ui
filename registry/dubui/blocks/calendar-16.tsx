@@ -3,10 +3,10 @@
 import * as React from "react"
 import { Clock2Icon } from "lucide-react"
 
-import { Calendar } from "@/registry/new-york-v4/ui/calendar"
-import { Card, CardContent, CardFooter } from "@/registry/new-york-v4/ui/card"
-import { Input } from "@/registry/new-york-v4/ui/input"
-import { Label } from "@/registry/new-york-v4/ui/label"
+import { Calendar } from "@/registry/dubui/ui/calendar"
+import { Card, CardContent, CardFooter } from "@/registry/dubui/ui/card"
+import { Input } from "@/registry/dubui/ui/input"
+import { Label } from "@/registry/dubui/ui/label"
 
 export default function Calendar16() {
   const [date, setDate] = React.useState<Date | undefined>(

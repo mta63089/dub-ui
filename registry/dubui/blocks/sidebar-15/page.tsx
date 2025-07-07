@@ -1,17 +1,17 @@
-import { SidebarLeft } from "@/registry/new-york-v4/blocks/sidebar-15/components/sidebar-left"
-import { SidebarRight } from "@/registry/new-york-v4/blocks/sidebar-15/components/sidebar-right"
+import { SidebarLeft } from "@/registry/dubui/blocks/sidebar-15/components/sidebar-left"
+import { SidebarRight } from "@/registry/dubui/blocks/sidebar-15/components/sidebar-right"
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbList,
   BreadcrumbPage,
-} from "@/registry/new-york-v4/ui/breadcrumb"
-import { Separator } from "@/registry/new-york-v4/ui/separator"
+} from "@/registry/dubui/ui/breadcrumb"
+import { Separator } from "@/registry/dubui/ui/separator"
 import {
   SidebarInset,
   SidebarProvider,
   SidebarTrigger,
-} from "@/registry/new-york-v4/ui/sidebar"
+} from "@/registry/dubui/ui/sidebar"
 
 export default function Page() {
   return (

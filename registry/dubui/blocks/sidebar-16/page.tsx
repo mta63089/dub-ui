@@ -1,9 +1,6 @@
-import { AppSidebar } from "@/registry/new-york-v4/blocks/sidebar-16/components/app-sidebar"
-import { SiteHeader } from "@/registry/new-york-v4/blocks/sidebar-16/components/site-header"
-import {
-  SidebarInset,
-  SidebarProvider,
-} from "@/registry/new-york-v4/ui/sidebar"
+import { AppSidebar } from "@/registry/dubui/blocks/sidebar-16/components/app-sidebar"
+import { SiteHeader } from "@/registry/dubui/blocks/sidebar-16/components/site-header"
+import { SidebarInset, SidebarProvider } from "@/registry/dubui/ui/sidebar"
 
 export const iframeHeight = "800px"
 

@@ -19,10 +19,10 @@ import {
   IconUsers,
 } from "@tabler/icons-react"
 
-import { NavDocuments } from "@/registry/new-york-v4/blocks/dashboard-01/components/nav-documents"
-import { NavMain } from "@/registry/new-york-v4/blocks/dashboard-01/components/nav-main"
-import { NavSecondary } from "@/registry/new-york-v4/blocks/dashboard-01/components/nav-secondary"
-import { NavUser } from "@/registry/new-york-v4/blocks/dashboard-01/components/nav-user"
+import { NavDocuments } from "@/registry/dubui/blocks/dashboard-01/components/nav-documents"
+import { NavMain } from "@/registry/dubui/blocks/dashboard-01/components/nav-main"
+import { NavSecondary } from "@/registry/dubui/blocks/dashboard-01/components/nav-secondary"
+import { NavUser } from "@/registry/dubui/blocks/dashboard-01/components/nav-user"
 import {
   Sidebar,
   SidebarContent,
@@ -31,7 +31,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/registry/new-york-v4/ui/sidebar"
+} from "@/registry/dubui/ui/sidebar"
 
 const data = {
   user: {

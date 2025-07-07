@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   keywords: ["Next.js", "React", "Tailwind CSS", "Components", "shadcn"],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "dubui",
+      url: "https://ui.ddubb.net",
     },
   ],
   creator: "shadcn",

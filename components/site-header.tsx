@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { GitHubLink } from "components/github-link"
 import { Icons } from "components/icons"
 import { MainNav } from "components/main-nav"
 import { MobileNav } from "components/mobile-nav"
@@ -10,7 +9,6 @@ import { getColors } from "@/lib/colors"
 import { siteConfig } from "@/lib/config"
 import { source } from "@/lib/source"
 import { CommandMenu } from "@/components/command-menu"
-// import blocks from "@/registry/__blocks__.json"
 import { Button } from "@/registry/dubui/ui/button"
 import { Separator } from "@/registry/dubui/ui/separator"
 
@@ -47,7 +45,6 @@ export function SiteHeader() {
               orientation="vertical"
               className="ml-2 hidden lg:block"
             />
-            <GitHubLink />
             <Separator orientation="vertical" className="3xl:flex hidden" />
             <SiteConfig className="3xl:flex hidden" />
             <Separator orientation="vertical" />

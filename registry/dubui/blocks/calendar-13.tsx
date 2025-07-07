@@ -2,15 +2,15 @@
 
 import * as React from "react"
 
-import { Calendar } from "@/registry/new-york-v4/ui/calendar"
-import { Label } from "@/registry/new-york-v4/ui/label"
+import { Calendar } from "@/registry/dubui/ui/calendar"
+import { Label } from "@/registry/dubui/ui/label"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/registry/new-york-v4/ui/select"
+} from "@/registry/dubui/ui/select"
 
 export default function Calendar13() {
   const [dropdown, setDropdown] =

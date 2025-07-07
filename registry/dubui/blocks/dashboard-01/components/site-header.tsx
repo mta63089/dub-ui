@@ -1,6 +1,6 @@
-import { Button } from "@/registry/new-york-v4/ui/button"
-import { Separator } from "@/registry/new-york-v4/ui/separator"
-import { SidebarTrigger } from "@/registry/new-york-v4/ui/sidebar"
+import { Button } from "@/registry/dubui/ui/button"
+import { Separator } from "@/registry/dubui/ui/separator"
+import { SidebarTrigger } from "@/registry/dubui/ui/sidebar"
 
 export function SiteHeader() {
   return (

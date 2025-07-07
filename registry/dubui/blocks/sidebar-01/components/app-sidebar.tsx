@@ -1,7 +1,7 @@
 import * as React from "react"
 
-import { SearchForm } from "@/registry/new-york-v4/blocks/sidebar-01/components/search-form"
-import { VersionSwitcher } from "@/registry/new-york-v4/blocks/sidebar-01/components/version-switcher"
+import { SearchForm } from "@/registry/dubui/blocks/sidebar-01/components/search-form"
+import { VersionSwitcher } from "@/registry/dubui/blocks/sidebar-01/components/version-switcher"
 import {
   Sidebar,
   SidebarContent,
@@ -13,7 +13,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarRail,
-} from "@/registry/new-york-v4/ui/sidebar"
+} from "@/registry/dubui/ui/sidebar"
 
 // This is sample data.
 const data = {

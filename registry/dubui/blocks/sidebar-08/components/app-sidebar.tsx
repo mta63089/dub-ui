@@ -14,10 +14,10 @@ import {
   SquareTerminal,
 } from "lucide-react"
 
-import { NavMain } from "@/registry/new-york-v4/blocks/sidebar-08/components/nav-main"
-import { NavProjects } from "@/registry/new-york-v4/blocks/sidebar-08/components/nav-projects"
-import { NavSecondary } from "@/registry/new-york-v4/blocks/sidebar-08/components/nav-secondary"
-import { NavUser } from "@/registry/new-york-v4/blocks/sidebar-08/components/nav-user"
+import { NavMain } from "@/registry/dubui/blocks/sidebar-08/components/nav-main"
+import { NavProjects } from "@/registry/dubui/blocks/sidebar-08/components/nav-projects"
+import { NavSecondary } from "@/registry/dubui/blocks/sidebar-08/components/nav-secondary"
+import { NavUser } from "@/registry/dubui/blocks/sidebar-08/components/nav-user"
 import {
   Sidebar,
   SidebarContent,
@@ -26,7 +26,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/registry/new-york-v4/ui/sidebar"
+} from "@/registry/dubui/ui/sidebar"
 
 const data = {
   user: {

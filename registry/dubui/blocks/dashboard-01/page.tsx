@@ -1,12 +1,9 @@
-import { AppSidebar } from "@/registry/new-york-v4/blocks/dashboard-01/components/app-sidebar"
-import { ChartAreaInteractive } from "@/registry/new-york-v4/blocks/dashboard-01/components/chart-area-interactive"
-import { DataTable } from "@/registry/new-york-v4/blocks/dashboard-01/components/data-table"
-import { SectionCards } from "@/registry/new-york-v4/blocks/dashboard-01/components/section-cards"
-import { SiteHeader } from "@/registry/new-york-v4/blocks/dashboard-01/components/site-header"
-import {
-  SidebarInset,
-  SidebarProvider,
-} from "@/registry/new-york-v4/ui/sidebar"
+import { AppSidebar } from "@/registry/dubui/blocks/dashboard-01/components/app-sidebar"
+import { ChartAreaInteractive } from "@/registry/dubui/blocks/dashboard-01/components/chart-area-interactive"
+import { DataTable } from "@/registry/dubui/blocks/dashboard-01/components/data-table"
+import { SectionCards } from "@/registry/dubui/blocks/dashboard-01/components/section-cards"
+import { SiteHeader } from "@/registry/dubui/blocks/dashboard-01/components/site-header"
+import { SidebarInset, SidebarProvider } from "@/registry/dubui/ui/sidebar"
 
 import data from "./data.json"
 

@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Plus } from "lucide-react"
 
-import { Calendars } from "@/registry/new-york-v4/blocks/sidebar-15/components/calendars"
-import { DatePicker } from "@/registry/new-york-v4/blocks/sidebar-15/components/date-picker"
-import { NavUser } from "@/registry/new-york-v4/blocks/sidebar-15/components/nav-user"
+import { Calendars } from "@/registry/dubui/blocks/sidebar-15/components/calendars"
+import { DatePicker } from "@/registry/dubui/blocks/sidebar-15/components/date-picker"
+import { NavUser } from "@/registry/dubui/blocks/sidebar-15/components/nav-user"
 import {
   Sidebar,
   SidebarContent,
@@ -12,9 +12,8 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarRail,
   SidebarSeparator,
-} from "@/registry/new-york-v4/ui/sidebar"
+} from "@/registry/dubui/ui/sidebar"
 
 // This is sample data.
 const data = {

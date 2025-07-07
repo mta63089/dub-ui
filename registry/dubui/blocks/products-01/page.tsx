@@ -1,4 +1,4 @@
-import { ProductsTable } from "@/registry/new-york-v4/blocks/products-01/components/products-table"
+import { ProductsTable } from "@/registry/dubui/blocks/products-01/components/products-table"
 
 // Load from database.
 const products = [

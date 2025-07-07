@@ -3,7 +3,7 @@
 import * as React from "react"
 import { type DateRange } from "react-day-picker"
 
-import { Calendar } from "@/registry/new-york-v4/ui/calendar"
+import { Calendar } from "@/registry/dubui/ui/calendar"
 
 export default function Calendar07() {
   const [dateRange, setDateRange] = React.useState<DateRange | undefined>({
