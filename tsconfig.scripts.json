@@ -2,17 +2,13 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "target": "ES2017",
     "module": "ESNext",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "isolatedModules": false,
-    "allowImportingTsExtensions": true,
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "allowImportingTsExtensions": true
   },
-  "include": ["src/scripts/**/*.{ts,mts}"],
+  "include": ["scripts/**/*.{ts,mts}"],
   "exclude": ["node_modules"]
 }
