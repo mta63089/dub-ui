@@ -18,14 +18,22 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL!),
   description: siteConfig.description,
-  keywords: ["Next.js", "React", "Tailwind CSS", "Components", "shadcn"],
+  keywords: [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "Components",
+    "mta630",
+    "shadcn",
+    "dubui",
+  ],
   authors: [
     {
       name: "dubui",
       url: "https://ui.ddubb.net",
     },
   ],
-  creator: "shadcn",
+  creator: "mta630",
   openGraph: {
     type: "website",
     locale: "en_US",
