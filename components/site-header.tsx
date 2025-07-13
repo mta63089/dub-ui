@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { AnimatePresence, motion, Variants } from "framer-motion"
-import { ArrowRight, Drama, Menu, Search, X } from "lucide-react"
+import { Drama, Menu, Search, X } from "lucide-react"
 
 import { siteConfig } from "@/lib/config"
+
+import { ModeSwitcher } from "./mode-switcher"
 
 interface NavItem {
   name: string
@@ -161,13 +163,7 @@ export function SiteHeader() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Link
-                  href="/signup"
-                  className="bg-foreground text-background hover:bg-foreground/90 inline-flex items-center space-x-2 rounded-lg px-5 py-2.5 text-sm font-medium shadow-sm transition-all duration-200"
-                >
-                  <span>Get Started</span>
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
+                <ModeSwitcher />
               </motion.div>
             </motion.div>
 
@@ -230,13 +226,7 @@ export function SiteHeader() {
                   >
                     Sign In
                   </Link>
-                  <Link
-                    href="/signup"
-                    className="bg-foreground text-background hover:bg-foreground/90 block w-full rounded-lg py-3 text-center font-medium transition-all duration-200"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Get Started
-                  </Link>
+                  <ModeSwitcher />
                 </motion.div>
               </div>
             </motion.div>
