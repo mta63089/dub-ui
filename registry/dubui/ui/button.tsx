@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
-import { cva } from "class-variance-authority"
+import { cva, VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
 
@@ -34,38 +34,26 @@ const buttonVariants = cva(
 
 interface ButtonProps extends React.ComponentProps<"button"> {
   children?: React.ReactNode
-  className: string
-  asChild: boolean
-  header: string
-  body: string
+  className?: string
 }
 
 function Button({
-  header,
-  body,
   className,
+  variant,
+  size,
   asChild = false,
   ...props
-}: ButtonProps) {
+}: ButtonProps &
+  VariantProps<typeof buttonVariants> & {
+    asChild?: boolean
+  }) {
   const Comp = asChild ? Slot : "button"
-
   return (
     <Comp
       data-slot="button"
-      className={cn(
-        "relative flex flex-shrink-0 flex-grow-0 flex-col items-center justify-start gap-2",
-        { className }
-      )}
+      className={cn(buttonVariants({ variant, size, className }))}
       {...props}
-    >
-      <div className="w-60 flex-shrink-0 flex-grow-0 text-left text-sm font-medium text-black/20">
-        Yes, I do
-      </div>
-      <div className="h-9 w-60 flex-shrink-0 flex-grow-0 text-left text-sm text-[#545454]">
-        I&amp;ll check my old provider&amp;s portal (like TIAA or Fidelity) for
-        my statement.
-      </div>
-    </Comp>
+    />
   )
 }
 

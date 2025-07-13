@@ -25,7 +25,6 @@ import { trackEvent } from "@/lib/events"
 import { createFileTreeForRegistryItemFiles, FileTree } from "@/lib/registry"
 import { cn } from "@/lib/utils"
 import { getIconForLanguageExtension } from "@/components/icons"
-import { OpenInV0Button } from "@/components/open-in-v0-button"
 import { Button } from "@/registry/dubui/ui/button"
 import {
   Collapsible,
@@ -172,7 +171,6 @@ function BlockViewerToolbar() {
             </ToggleGroupItem>
             <Separator orientation="vertical" className="!h-4" />
             <Button
-              size="icon"
               variant="ghost"
               className="size-6 rounded-sm p-0"
               asChild
@@ -185,7 +183,6 @@ function BlockViewerToolbar() {
             </Button>
             <Separator orientation="vertical" className="!h-4" />
             <Button
-              size="icon"
               variant="ghost"
               className="size-6 rounded-sm p-0"
               title="Refresh Preview"
@@ -204,7 +201,7 @@ function BlockViewerToolbar() {
         <Button
           variant="outline"
           className="w-fit gap-1 px-2 shadow-none"
-          size="sm"
+          size="condensed"
           onClick={() => {
             copyToClipboard(`npx shadcn@latest add ${item.name}`)
           }}
@@ -213,7 +210,6 @@ function BlockViewerToolbar() {
           <span>npx shadcn add {item.name}</span>
         </Button>
         <Separator orientation="vertical" className="mx-1 !h-4" />
-        <OpenInV0Button name={item.name} />
       </div>
     </div>
   )
@@ -445,7 +441,7 @@ function BlockCopyCodeButton() {
   return (
     <Button
       variant="ghost"
-      size="icon"
+      size="condensed"
       className="size-7"
       onClick={() => {
         copyToClipboard(content)
