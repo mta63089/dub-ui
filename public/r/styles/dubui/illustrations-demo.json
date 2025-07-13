@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "illustrations-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "illustrations"
+  ],
+  "files": [
+    {
+      "path": "registry/dubui/examples/illustrations-demo.tsx",
+      "content": "import { Illustrations } from \"../ui/illustrations\"\n\nexport default function IllustrationsDemo() {\n  return (\n    <div className=\"flex flex-row place-content-center\">\n      <Illustrations.puzzlePerson type=\"outline\" />\n      <Illustrations.puzzlePerson type=\"grayscale\" />\n      <Illustrations.puzzlePerson type=\"color\" />\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

@@ -3,13 +3,12 @@
   "name": "clickthrough-button",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-slot",
     "framer-motion"
   ],
   "files": [
     {
       "path": "registry/dubui/ui/clickthrough-button.tsx",
-      "content": "import * as React from \"react\"\nimport { HTMLMotionProps, motion } from \"framer-motion\"\nimport { ArrowRight } from \"lucide-react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface ButtonProps extends HTMLMotionProps<\"button\"> {\n  children?: React.ReactNode\n  className?: string\n  headerText: string\n  bodyText: string\n}\n\nfunction CTButton({ className, headerText, bodyText, ...props }: ButtonProps) {\n  return (\n    <motion.button data-slot=\"button\" className={cn(\"\", className)} {...props}>\n      <div className=\"relative flex flex-shrink-0 flex-grow-0 flex-col items-center justify-start gap-2\">\n        <p className=\"w-60 flex-shrink-0 flex-grow-0 text-left text-sm font-medium text-black/20\">\n          {headerText}\n        </p>\n        <p className=\"h-9 w-60 flex-shrink-0 flex-grow-0 text-left text-sm text-[#545454]\">\n          {bodyText}\n        </p>\n      </div>\n      <ArrowRight className=\"size-8\" />\n    </motion.button>\n  )\n}\n\nexport { CTButton }\n",
+      "content": "import * as React from \"react\"\nimport { ChevronRight } from \"lucide-react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface ButtonProps extends React.ComponentProps<\"button\"> {\n  children?: React.ReactNode\n  className?: string\n  headerText: string\n  bodyText: string\n}\n\nexport function CTButton({\n  className,\n  headerText,\n  bodyText,\n  ...props\n}: ButtonProps) {\n  return (\n    <button\n      data-slot=\"button\"\n      className={cn(\n        \"hover:text-foreground hover:border-foreground easeInOut flex cursor-pointer flex-row place-content-center gap-2 rounded-md border border-[#c3cac9] p-6 text-[#C3CAC9] transition-all duration-300 active:bg-[#DFF5F4]\",\n        className\n      )}\n      {...props}\n    >\n      <div className=\"flex flex-col\">\n        <div className=\"text-foreground self-start pb-2 text-lg\">\n          {headerText}\n        </div>\n        <div className=\"w-72 text-left text-sm text-[#545454]\">{bodyText}</div>\n      </div>\n      <div className=\"flex items-center\">\n        <ChevronRight className=\"size-8\" />\n      </div>\n    </button>\n  )\n}\n",
       "type": "registry:ui"
     }
   ]

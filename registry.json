@@ -126,7 +126,6 @@
       "name": "clickthrough-button",
       "type": "registry:ui",
       "dependencies": [
-        "@radix-ui/react-slot",
         "framer-motion"
       ],
       "files": [
@@ -218,6 +217,17 @@
       "files": [
         {
           "path": "registry/dubui/ui/collapsible.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "illustrations",
+      "type": "registry:ui",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "registry/dubui/ui/illustrations.tsx",
           "type": "registry:ui"
         }
       ]
@@ -4112,6 +4122,19 @@
       "files": [
         {
           "path": "registry/dubui/examples/clickthrough-button-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "illustrations-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "illustrations"
+      ],
+      "files": [
+        {
+          "path": "registry/dubui/examples/illustrations-demo.tsx",
           "type": "registry:example"
         }
       ]

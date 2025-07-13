@@ -299,6 +299,17 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "illustrations-demo",
+    type: "registry:example",
+    registryDependencies: ["illustrations"],
+    files: [
+      {
+        path: "examples/illustrations-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "calendar-demo",
     type: "registry:example",
     registryDependencies: ["calendar"],

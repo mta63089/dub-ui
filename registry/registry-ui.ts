@@ -191,6 +191,17 @@ export const ui: Registry["items"] = [
     ],
   },
   {
+    name: "illustrations",
+    type: "registry:ui",
+    dependencies: [],
+    files: [
+      {
+        path: "ui/illustrations.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+  {
     name: "command",
     type: "registry:ui",
     dependencies: ["cmdk"],
