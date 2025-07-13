@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clickthrough-button",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "framer-motion"
+  ],
+  "files": [
+    {
+      "path": "registry/dubui/ui/clickthrough-button.tsx",
+      "content": "import * as React from \"react\"\nimport { HTMLMotionProps, motion } from \"framer-motion\"\nimport { ArrowRight } from \"lucide-react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface ButtonProps extends HTMLMotionProps<\"button\"> {\n  children?: React.ReactNode\n  className?: string\n  headerText: string\n  bodyText: string\n}\n\nfunction CTButton({ className, headerText, bodyText, ...props }: ButtonProps) {\n  return (\n    <motion.button data-slot=\"button\" className={cn(\"\", className)} {...props}>\n      <div className=\"relative flex flex-shrink-0 flex-grow-0 flex-col items-center justify-start gap-2\">\n        <p className=\"w-60 flex-shrink-0 flex-grow-0 text-left text-sm font-medium text-black/20\">\n          {headerText}\n        </p>\n        <p className=\"h-9 w-60 flex-shrink-0 flex-grow-0 text-left text-sm text-[#545454]\">\n          {bodyText}\n        </p>\n      </div>\n      <ArrowRight className=\"size-8\" />\n    </motion.button>\n  )\n}\n\nexport { CTButton }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

@@ -3,7 +3,13 @@
   "name": "calendar-28",
   "type": "registry:block",
   "description": "Input with date picker",
-  "registryDependencies": ["calendar", "input", "label", "popover", "button"],
+  "registryDependencies": [
+    "calendar",
+    "input",
+    "label",
+    "popover",
+    "button"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/calendar-28.tsx",
@@ -16,5 +22,8 @@
     "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
     "mobile": "component"
   },
-  "categories": ["calendar", "date"]
+  "categories": [
+    "calendar",
+    "date"
+  ]
 }

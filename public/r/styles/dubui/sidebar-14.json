@@ -3,7 +3,10 @@
   "name": "sidebar-14",
   "type": "registry:block",
   "description": "A sidebar on the right.",
-  "registryDependencies": ["sidebar", "breadcrumb"],
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/sidebar-14/page.tsx",
@@ -17,5 +20,8 @@
       "type": "registry:component"
     }
   ],
-  "categories": ["sidebar", "dashboard"]
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ]
 }

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clickthrough-button-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "clickthrough-button"
+  ],
+  "files": [
+    {
+      "path": "registry/dubui/examples/clickthrough-button-demo.tsx",
+      "content": "import { CTButton } from \"../ui/clickthrough-button\"\n\nexport default function CTButtonDemo() {\n  return (\n    <div className=\"flex flex-wrap place-content-center items-center gap-2 md:flex-row\">\n      <CTButton\n        headerText=\"Yes, I do\"\n        bodyText=\"  I&amp;ll check my old provider&amp;s portal (like TIAA or Fidelity) for my statement. \"\n      />\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

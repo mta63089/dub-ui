@@ -123,6 +123,20 @@
       ]
     },
     {
+      "name": "clickthrough-button",
+      "type": "registry:ui",
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "framer-motion"
+      ],
+      "files": [
+        {
+          "path": "registry/dubui/ui/clickthrough-button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "calendar",
       "type": "registry:ui",
       "dependencies": [
@@ -4085,6 +4099,19 @@
       "files": [
         {
           "path": "registry/dubui/examples/button-as-child.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "clickthrough-button-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "clickthrough-button"
+      ],
+      "files": [
+        {
+          "path": "registry/dubui/examples/clickthrough-button-demo.tsx",
           "type": "registry:example"
         }
       ]

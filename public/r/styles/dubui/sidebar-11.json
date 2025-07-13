@@ -3,7 +3,12 @@
   "name": "sidebar-11",
   "type": "registry:block",
   "description": "A sidebar with a collapsible file tree.",
-  "registryDependencies": ["sidebar", "breadcrumb", "separator", "collapsible"],
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "collapsible"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/sidebar-11/page.tsx",
@@ -17,5 +22,8 @@
       "type": "registry:component"
     }
   ],
-  "categories": ["sidebar", "dashboard"]
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ]
 }

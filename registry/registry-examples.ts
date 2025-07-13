@@ -288,6 +288,17 @@ export const examples: Registry["items"] = [
     ],
   },
   {
+    name: "clickthrough-button-demo",
+    type: "registry:example",
+    registryDependencies: ["clickthrough-button"],
+    files: [
+      {
+        path: "examples/clickthrough-button-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "calendar-demo",
     type: "registry:example",
     registryDependencies: ["calendar"],

@@ -3,7 +3,12 @@
   "name": "calendar-17",
   "type": "registry:block",
   "description": "With time picker inline",
-  "registryDependencies": ["calendar", "card", "input", "label"],
+  "registryDependencies": [
+    "calendar",
+    "card",
+    "input",
+    "label"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/calendar-17.tsx",
@@ -16,5 +21,8 @@
     "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
     "mobile": "component"
   },
-  "categories": ["calendar", "date"]
+  "categories": [
+    "calendar",
+    "date"
+  ]
 }

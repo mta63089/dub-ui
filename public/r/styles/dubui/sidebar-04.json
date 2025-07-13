@@ -3,7 +3,11 @@
   "name": "sidebar-04",
   "type": "registry:block",
   "description": "A floating sidebar with submenus.",
-  "registryDependencies": ["sidebar", "breadcrumb", "separator"],
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/sidebar-04/page.tsx",
@@ -17,5 +21,8 @@
       "type": "registry:component"
     }
   ],
-  "categories": ["sidebar", "dashboard"]
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ]
 }

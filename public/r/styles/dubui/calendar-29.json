@@ -3,8 +3,16 @@
   "name": "calendar-29",
   "type": "registry:block",
   "description": "Natural language date picker",
-  "dependencies": ["chrono-node"],
-  "registryDependencies": ["calendar", "input", "label", "popover", "button"],
+  "dependencies": [
+    "chrono-node"
+  ],
+  "registryDependencies": [
+    "calendar",
+    "input",
+    "label",
+    "popover",
+    "button"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/calendar-29.tsx",
@@ -17,5 +25,8 @@
     "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start md:pt-20 justify-center min-w-0 xl:py-24",
     "mobile": "component"
   },
-  "categories": ["calendar", "date"]
+  "categories": [
+    "calendar",
+    "date"
+  ]
 }

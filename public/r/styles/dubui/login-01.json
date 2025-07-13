@@ -3,7 +3,12 @@
   "name": "login-01",
   "type": "registry:block",
   "description": "A simple login form.",
-  "registryDependencies": ["button", "card", "input", "label"],
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/login-01/page.tsx",
@@ -17,5 +22,8 @@
       "type": "registry:component"
     }
   ],
-  "categories": ["authentication", "login"]
+  "categories": [
+    "authentication",
+    "login"
+  ]
 }

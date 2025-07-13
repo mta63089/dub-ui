@@ -3,7 +3,12 @@
   "name": "sidebar-13",
   "type": "registry:block",
   "description": "A sidebar in a dialog.",
-  "registryDependencies": ["sidebar", "breadcrumb", "button", "dialog"],
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "button",
+    "dialog"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/sidebar-13/page.tsx",
@@ -17,5 +22,8 @@
       "type": "registry:component"
     }
   ],
-  "categories": ["sidebar", "dashboard"]
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ]
 }

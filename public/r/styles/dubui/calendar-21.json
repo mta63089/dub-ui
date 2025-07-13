@@ -3,7 +3,9 @@
   "name": "calendar-21",
   "type": "registry:block",
   "description": "Custom days and formatters",
-  "registryDependencies": ["calendar"],
+  "registryDependencies": [
+    "calendar"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/calendar-21.tsx",
@@ -16,5 +18,8 @@
     "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start justify-center min-w-0",
     "mobile": "component"
   },
-  "categories": ["calendar", "date"]
+  "categories": [
+    "calendar",
+    "date"
+  ]
 }

@@ -3,7 +3,9 @@
   "name": "calendar-01",
   "type": "registry:block",
   "description": "A simple calendar.",
-  "registryDependencies": ["calendar"],
+  "registryDependencies": [
+    "calendar"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/calendar-01.tsx",
@@ -16,5 +18,8 @@
     "container": "w-full bg-surface min-h-svh flex px-4 py-12 items-start md:py-20 justify-center min-w-0",
     "mobile": "component"
   },
-  "categories": ["calendar", "date"]
+  "categories": [
+    "calendar",
+    "date"
+  ]
 }

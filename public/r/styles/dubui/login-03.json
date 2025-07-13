@@ -3,7 +3,12 @@
   "name": "login-03",
   "type": "registry:block",
   "description": "A login page with a muted background color.",
-  "registryDependencies": ["button", "card", "input", "label"],
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/login-03/page.tsx",
@@ -17,5 +22,8 @@
       "type": "registry:component"
     }
   ],
-  "categories": ["authentication", "login"]
+  "categories": [
+    "authentication",
+    "login"
+  ]
 }

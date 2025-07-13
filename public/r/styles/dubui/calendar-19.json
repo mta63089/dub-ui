@@ -3,8 +3,15 @@
   "name": "calendar-19",
   "type": "registry:block",
   "description": "With presets",
-  "dependencies": ["date-fns"],
-  "registryDependencies": ["calendar", "card", "input", "label"],
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "calendar",
+    "card",
+    "input",
+    "label"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/calendar-19.tsx",
@@ -17,5 +24,8 @@
     "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start justify-center min-w-0",
     "mobile": "component"
   },
-  "categories": ["calendar", "date"]
+  "categories": [
+    "calendar",
+    "date"
+  ]
 }

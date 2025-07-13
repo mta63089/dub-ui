@@ -3,7 +3,12 @@
   "name": "calendar-16",
   "type": "registry:block",
   "description": "With time picker",
-  "registryDependencies": ["calendar", "card", "input", "label"],
+  "registryDependencies": [
+    "calendar",
+    "card",
+    "input",
+    "label"
+  ],
   "files": [
     {
       "path": "registry/dubui/blocks/calendar-16.tsx",
@@ -16,5 +21,8 @@
     "container": "w-full bg-surface min-h-svh flex px-6 py-12 items-start justify-center min-w-0",
     "mobile": "component"
   },
-  "categories": ["calendar", "date"]
+  "categories": [
+    "calendar",
+    "date"
+  ]
 }
