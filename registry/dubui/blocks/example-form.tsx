@@ -3,7 +3,7 @@
 import * as React from "react"
 import { z } from "zod"
 
-import { Button } from "@/registry/new-york/ui/button"
+import { Button } from "@/registry/dubui/ui/button"
 import {
   Card,
   CardContent,
@@ -11,10 +11,10 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york/ui/card"
-import { Input } from "@/registry/new-york/ui/input"
-import { Label } from "@/registry/new-york/ui/label"
-import { Textarea } from "@/registry/new-york/ui/textarea"
+} from "@/registry/dubui/ui/card"
+import { Input } from "@/registry/dubui/ui/input"
+import { Label } from "@/registry/dubui/ui/label"
+import { Textarea } from "@/registry/dubui/ui/textarea"
 
 const exampleFormSchema = z.object({
   name: z.string().min(1),

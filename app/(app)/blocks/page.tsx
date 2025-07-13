@@ -6,13 +6,7 @@ import { Button } from "@/registry/dubui/ui/button"
 export const dynamic = "force-static"
 export const revalidate = false
 
-const FEATURED_BLOCKS = [
-  "dashboard-01",
-  "sidebar-07",
-  "sidebar-03",
-  "login-03",
-  "login-04",
-]
+const FEATURED_BLOCKS = ["example-form"]
 
 export default async function BlocksPage() {
   return (

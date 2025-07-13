@@ -2,6 +2,19 @@ import { type Registry } from "shadcn/registry"
 
 export const blocks: Registry["items"] = [
   {
+    name: "example-form",
+    type: "registry:block",
+    description: "A form",
+    dependencies: ["zod"],
+    registryDependencies: ["card", "button", "input", "label", "textarea"],
+    files: [
+      {
+        path: "blocks/example-form.tsx",
+        type: "registry:block",
+      },
+    ],
+  },
+  {
     name: "dashboard-01",
     type: "registry:block",
     description: "A dashboard with sidebar, charts and data table.",

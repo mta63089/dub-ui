@@ -1,5 +1,9 @@
 [
   {
+    "name": "example-form",
+    "description": "A form"
+  },
+  {
     "name": "dashboard-01",
     "description": "A dashboard with sidebar, charts and data table.",
     "categories": ["dashboard"]
