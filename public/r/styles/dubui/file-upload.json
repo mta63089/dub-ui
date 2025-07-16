@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "file-upload",
+  "type": "registry:ui",
+  "files": [
+    {
+      "path": "registry/dubui/ui/file-upload.tsx",
+      "content": "import React from \"react\"\n\nimport { cn } from \"../utils\"\n\ninterface FileUploadProps extends React.ComponentProps<\"input\"> {\n  className?: string\n  children?: React.ReactNode\n}\n\nfunction FileUpload({ children, className, ...props }: FileUploadProps) {\n  return (\n    <input className={cn(\"flex\", className)} {...props}>\n      {children}\n    </input>\n  )\n}\n\nexport { FileUpload, type FileUploadProps }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

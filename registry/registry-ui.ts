@@ -2,6 +2,17 @@ import { type Registry } from "shadcn/registry"
 
 export const ui: Registry["items"] = [
   {
+    name: "file-upload",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/file-upload.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+
+  {
     name: "accordion",
     type: "registry:ui",
     dependencies: ["@radix-ui/react-accordion"],

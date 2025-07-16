@@ -19,6 +19,16 @@
       "cssVars": {}
     },
     {
+      "name": "file-upload",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/dubui/ui/file-upload.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "accordion",
       "type": "registry:ui",
       "dependencies": [
@@ -3794,6 +3804,19 @@
           "chart-5": "141 40% 9%"
         }
       }
+    },
+    {
+      "name": "file-upload-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "file-upload"
+      ],
+      "files": [
+        {
+          "path": "registry/dubui/examples/file-upload-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
     },
     {
       "name": "accordion-demo",

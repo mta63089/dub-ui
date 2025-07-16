@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "file-upload-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "file-upload"
+  ],
+  "files": [
+    {
+      "path": "registry/dubui/examples/file-upload-demo.tsx",
+      "content": "import { FileUpload } from \"../ui/file-upload\"\n\nexport default function FileUploadDemo() {\n  return (\n    <div className=\"flex flex-wrap place-content-center items-center gap-2 md:flex-row\">\n      <FileUpload />\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}
