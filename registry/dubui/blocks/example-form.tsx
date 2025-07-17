@@ -4,17 +4,11 @@ import * as React from "react"
 import { z } from "zod"
 
 import { Button } from "@/registry/dubui/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/registry/dubui/ui/card"
 import { Input } from "@/registry/dubui/ui/input"
 import { Label } from "@/registry/dubui/ui/label"
 import { Textarea } from "@/registry/dubui/ui/textarea"
+
+import { ProgressBar } from "../ui/progress-bar"
 
 const exampleFormSchema = z.object({
   name: z.string().min(1),
@@ -66,15 +60,16 @@ export function ExampleForm() {
   )
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-sm">
-      <Card>
-        <CardHeader>
-          <CardTitle>How can we help?</CardTitle>
-          <CardDescription>
-            Need help with your project? We&apos;re here to assist you.
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="flex flex-col gap-6">
+    <form
+      onSubmit={handleSubmit}
+      className="mx-auto w-full max-w-sm place-content-center border border-gray-300 py-4"
+    >
+      <ProgressBar currentStep={2} totalSteps={5} />
+      <div className="p-4">
+        <h3 className="mb-4 text-center text-xl">
+          Got it! We will just need a few details to help find your old account
+        </h3>
+        <div className="flex flex-col gap-8">
           <div
             className="group/field grid gap-2"
             data-invalid={!!state.errors?.name}
@@ -83,7 +78,7 @@ export function ExampleForm() {
               htmlFor="name"
               className="group-data-[invalid=true]/field:text-destructive"
             >
-              Name <span aria-hidden="true">*</span>
+              Old employer name
             </Label>
             <Input
               id="name"
@@ -102,25 +97,24 @@ export function ExampleForm() {
             )}
           </div>
           <div
-            className="group/field grid gap-2"
+            className="group/field flex flex-row gap-2"
             data-invalid={!!state.errors?.email}
           >
-            <Label
-              htmlFor="email"
-              className="group-data-[invalid=true]/field:text-destructive"
-            >
-              Email <span aria-hidden="true">*</span>
+            <Label className="group-data-[invalid=true]/field:text-destructive">
+              Approximate employment years
             </Label>
-            <Input
-              id="email"
-              name="email"
-              placeholder="leerob@acme.com"
-              className="group-data-[invalid=true]/field:border-destructive focus-visible:group-data-[invalid=true]/field:ring-destructive"
-              disabled={pending}
-              aria-invalid={!!state.errors?.email}
-              aria-errormessage="error-email"
-              defaultValue={state.defaultValues.email}
-            />
+            <div className="flex w-1/3 flex-col">
+              <Input
+                id="start-year"
+                name="Start Year"
+                placeholder="leerob@acme.com"
+                className="group-data-[invalid=true]/field:border-destructive focus-visible:group-data-[invalid=true]/field:ring-destructive"
+                disabled={pending}
+                aria-invalid={!!state.errors?.email}
+                aria-errormessage="error-email"
+                defaultValue={state.defaultValues.email}
+              />
+            </div>
             {state.errors?.email && (
               <p id="error-email" className="text-destructive text-sm">
                 {state.errors.email}
@@ -153,13 +147,9 @@ export function ExampleForm() {
               </p>
             )}
           </div>
-        </CardContent>
-        <CardFooter>
-          <Button type="submit" size="sm" disabled={pending}>
-            {pending ? "Sending..." : "Send Message"}
-          </Button>
-        </CardFooter>
-      </Card>
+        </div>
+        <Button>Search</Button>
+      </div>
     </form>
   )
 }
