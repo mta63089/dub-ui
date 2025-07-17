@@ -2,6 +2,17 @@ import { type Registry } from "shadcn/registry"
 
 export const ui: Registry["items"] = [
   {
+    name: "progress-bar",
+    type: "registry:ui",
+    files: [
+      {
+        path: "ui/progress-bar.tsx",
+        type: "registry:ui",
+      },
+    ],
+  },
+
+  {
     name: "file-upload",
     type: "registry:ui",
     files: [

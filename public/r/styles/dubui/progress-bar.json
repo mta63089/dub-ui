@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-bar",
+  "type": "registry:ui",
+  "files": [
+    {
+      "path": "registry/dubui/ui/progress-bar.tsx",
+      "content": "interface ProgressBarProps {\n  currentStep: number\n  totalSteps: number\n}\n\nexport function ProgressBar({ currentStep, totalSteps }: ProgressBarProps) {\n  const percentage = Math.min(\n    Math.max((currentStep / totalSteps) * 100, 0),\n    100\n  )\n\n  return (\n    <div className=\"h-1 w-full overflow-hidden rounded-sm bg-gray-200\">\n      <div\n        className=\"h-full bg-black transition-all duration-300 ease-in-out\"\n        style={{ width: `${percentage}%` }}\n      />\n    </div>\n  )\n}\n",
+      "type": "registry:ui"
+    }
+  ]
+}

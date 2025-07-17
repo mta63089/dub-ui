@@ -2,6 +2,18 @@ import { type Registry } from "shadcn/registry"
 
 export const examples: Registry["items"] = [
   {
+    name: "progress-bar-demo",
+    type: "registry:example",
+    registryDependencies: ["progress-bar"],
+    files: [
+      {
+        path: "examples/progress-bar-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+
+  {
     name: "file-upload-demo",
     type: "registry:example",
     registryDependencies: ["file-upload"],

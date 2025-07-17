@@ -15,7 +15,7 @@
     "registry:build": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/build-registry.mts && prettier --log-level silent --write \"registry/**/*.{ts,tsx,json,mdx}\" --cache",
     "registry:capture": "tsx --tsconfig ./tsconfig.scripts.json ./scripts/capture-registry.mts",
     "postinstall": "fumadocs-mdx",
-    "dubui:create": "node scripts/create-component.js && pnpm registry:build"
+    "dubui:create": "node scripts/create-component.js"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
@@ -108,12 +108,15 @@
     "@typescript-eslint/parser": "^8.31.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4",
     "tsconfig-paths": "^4.2.0",
     "tw-animate-css": "^1.2.4",
-    "typescript": "^5",
+    "typescript": "^5.8.3",
     "unist-builder": "3.0.0",
     "unist-util-visit": "^4.1.2"
   },

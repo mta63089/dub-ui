@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-bar-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "progress-bar"
+  ],
+  "files": [
+    {
+      "path": "registry/dubui/examples/progress-bar-demo.tsx",
+      "content": "import { ProgressBar } from \"../ui/progress-bar\"\n\nexport default function ProgressBarDemo() {\n  return (\n    <div className=\"flex flex-wrap place-content-center items-center gap-2 md:flex-row\">\n      <ProgressBar currentStep={2} totalSteps={4} />\n    </div>\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ]
+}

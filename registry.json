@@ -19,6 +19,16 @@
       "cssVars": {}
     },
     {
+      "name": "progress-bar",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "registry/dubui/ui/progress-bar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "file-upload",
       "type": "registry:ui",
       "files": [
@@ -3804,6 +3814,19 @@
           "chart-5": "141 40% 9%"
         }
       }
+    },
+    {
+      "name": "progress-bar-demo",
+      "type": "registry:example",
+      "registryDependencies": [
+        "progress-bar"
+      ],
+      "files": [
+        {
+          "path": "registry/dubui/examples/progress-bar-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
     },
     {
       "name": "file-upload-demo",
