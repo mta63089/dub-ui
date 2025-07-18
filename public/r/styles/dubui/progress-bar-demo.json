@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "registry/dubui/examples/progress-bar-demo.tsx",
-      "content": "import { ProgressBar } from \"../ui/progress-bar\"\n\nexport default function ProgressBarDemo() {\n  return (\n    <div className=\"flex flex-wrap place-content-center items-center gap-2 md:flex-row\">\n      <ProgressBar currentStep={2} totalSteps={4} />\n    </div>\n  )\n}\n",
+      "content": "\"use client\"\n\nimport { useState } from \"react\"\nimport { MinusCircle, PlusCircle } from \"lucide-react\"\n\nimport { Button } from \"../ui/button\"\nimport { ProgressBar } from \"../ui/progress-bar\"\n\nexport default function ProgressBarDemo() {\n  const [currentStep, setCurrentStep] = useState(0)\n\n  return (\n    <div className=\"flex min-w-full flex-wrap place-content-center items-center gap-2 md:flex-row\">\n      <ProgressBar currentStep={currentStep} totalSteps={10} />\n      <div className=\"flex w-1/2 flex-row place-content-center gap-4 py-4\">\n        <Button\n          className=\"size-8\"\n          onClick={() => setCurrentStep(currentStep - 1)}\n        >\n          <MinusCircle />\n        </Button>\n        <Button\n          className=\"size-8\"\n          onClick={() => setCurrentStep(currentStep + 1)}\n        >\n          <PlusCircle />\n        </Button>\n      </div>\n    </div>\n  )\n}\n",
       "type": "registry:example"
     }
   ]

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "mobile-header",
+  "type": "registry:block",
+  "description": "A header for mobile version of a web app",
+  "dependencies": [
+    "zod"
+  ],
+  "registryDependencies": [
+    "card",
+    "button",
+    "input",
+    "label",
+    "textarea"
+  ],
+  "files": [
+    {
+      "path": "registry/dubui/blocks/mobile-header.tsx",
+      "content": "import { ArrowLeft, HouseIcon } from \"lucide-react\"\n\nimport ManifestLogo from \"@/components/manifest-logo\"\n\nexport default function MobileHeader() {\n  return (\n    <>\n      <div className=\"flex w-full flex-row justify-evenly p-4\">\n        <div className=\"h-full w-1/3\">\n          <ArrowLeft />\n        </div>\n        <div className=\"h-full w-1/3\">\n          <ManifestLogo />\n        </div>\n        <div className=\"h-full w-1/3\">\n          <HouseIcon />\n        </div>\n      </div>\n    </>\n  )\n}\n",
+      "type": "registry:block"
+    }
+  ]
+}
